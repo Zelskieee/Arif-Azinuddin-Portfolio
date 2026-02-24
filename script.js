@@ -286,6 +286,280 @@ const projects = [
 
 // ========== RENDER PROJECTS ==========
 let currentFilter = "all";
+let currentLanguage = localStorage.getItem("portfolioLang") || "bm";
+let taglineRunId = 0;
+
+const i18n = {
+  bm: {
+    pageTitle: "Arif Azinuddin | Pembangun Sistem",
+    taglines: ["Pembangun Sistem", "Pembangun Aplikasi Mudah Alih", "Peminat Data"],
+    projectTypeMap: {
+      "E-Commerce Website": "Laman Web E-Dagang",
+      "Mobile Application (React Native)": "Aplikasi Mudah Alih (React Native)",
+      "Web Application": "Aplikasi Web",
+      "Mobile Application (Flutter & Firebase)": "Aplikasi Mudah Alih (Flutter & Firebase)",
+      "Mobile & Web Application": "Aplikasi Mudah Alih & Web",
+      "Machine Learning": "Pembelajaran Mesin",
+      "Algorithm Analysis": "Analisis Algoritma",
+      "Full-Stack Web Application": "Aplikasi Web Full-Stack",
+      "Data Analytics": "Analitik Data",
+      "Desktop Application": "Aplikasi Desktop",
+      "Network Design": "Reka Bentuk Rangkaian",
+      "Systems Programming": "Pengaturcaraan Sistem",
+      "Algorithm Implementation": "Pelaksanaan Algoritma",
+      "System Configuration": "Konfigurasi Sistem",
+    },
+    documentLabelMap: {
+      "View PDF": "Lihat PDF",
+      "View PKT (Campus)": "Lihat PKT (Kampus)",
+      "View PKT (Project)": "Lihat PKT (Projek)",
+    },
+    ui: {
+      navHome: "Utama",
+      navAbout: "Tentang",
+      navExperience: "Pengalaman",
+      navSkills: "Kemahiran",
+      navProjects: "Projek",
+      navReferences: "Rujukan",
+      resume: "Resume",
+      heroDesc:
+        "Bersemangat dalam membina penyelesaian digital yang berfungsi dan berfokuskan pengguna, dengan pengalaman merentas projek web, mudah alih, dan berasaskan data. Saya menghubungkan inovasi teknikal dengan pengalaman pengguna yang cemerlang.",
+      getInTouch: "Hubungi Saya",
+      viewProjects: "Lihat Projek",
+      aboutTitle: "Tentang Saya",
+      aboutSubtitle: "Pembangun sistem berdedikasi yang bersemangat menyelesaikan masalah dunia sebenar",
+      aboutP1:
+        "Hai, saya Arif Azinuddin, seorang pembangun sistem berdedikasi dengan pengalaman menyeluruh dalam pembangunan web dan aplikasi mudah alih full-stack. Saya gemar menyelesaikan masalah dunia sebenar melalui kod yang kemas, cekap, dan reka bentuk intuitif.",
+      aboutP2:
+        "Kepakaran saya merangkumi pelbagai bahasa pengaturcaraan dan rangka kerja, membolehkan saya membina penyelesaian berskala yang mengutamakan fungsi serta pengalaman pengguna. Saya sentiasa belajar dan menyesuaikan diri dengan teknologi baharu untuk menghasilkan penyelesaian terkini.",
+      statLanguages: "Bahasa",
+      statProjects: "Projek",
+      statCertificates: "Sijil",
+      expTitle: "Pengalaman & Pendidikan",
+      expSubtitle: "Perjalanan profesional dan latar belakang akademik saya",
+      tabWork: "Pengalaman Kerja",
+      tabEducation: "Pendidikan",
+      tabCertificates: "Sijil",
+      skillsTitle: "Kemahiran Teknikal",
+      skillsSubtitle: "Set kemahiran menyeluruh untuk membina aplikasi moden",
+      skillLanguages: "Bahasa Pengaturcaraan",
+      skillFrameworks: "Rangka Kerja",
+      skillTools: "Alat & Teknologi",
+      skillIdes: "IDE & Platform",
+      skillSoft: "Kemahiran Insaniah",
+      softCommunication: "Komunikasi",
+      softTeamwork: "Kerja Berpasukan",
+      softProblemSolving: "Penyelesaian Masalah",
+      softLeadership: "Kepimpinan",
+      softAdaptability: "Kebolehsuaian",
+      projectsTitle: "Projek Pilihan",
+      projectsSubtitle: "Sorotan kerja dan pencapaian terkini saya",
+      filterAll: "Semua Projek",
+      filterWeb: "Web",
+      filterMobile: "Mudah Alih",
+      filterAI: "AI/ML",
+      filterData: "Analitik Data",
+      filterNetwork: "Rangkaian",
+      filterDesign: "Reka Bentuk",
+      referencesTitle: "Rujukan",
+      referencesSubtitle: "Rujukan profesional yang boleh memberi maklum balas tentang kerja dan peribadi saya",
+      professionalReferences: "Rujukan Profesional",
+      contactInformation: "Maklumat Hubungan",
+      referenceNote1: "Beliau merupakan penyelia latihan industri saya.",
+      referenceNote2: "Beliau merupakan penyelia projek tahun akhir saya, bertajuk GlowGuide Mobile Application.",
+      referenceNote3: "Beliau merupakan penyelia akademik saya sepanjang pengajian ijazah.",
+      contactEmail: "E-mel",
+      footerRights: "Hak cipta terpelihara.",
+      liveView: "Lihat Langsung",
+      viewOnGithub: "Lihat di GitHub",
+    },
+  },
+  en: {
+    pageTitle: "Arif Azinuddin | System Developer",
+    taglines: ["System Developer", "Mobile App Builder", "Data Enthusiast"],
+    projectTypeMap: {},
+    documentLabelMap: {},
+    ui: {
+      navHome: "Home",
+      navAbout: "About",
+      navExperience: "Experience",
+      navSkills: "Skills",
+      navProjects: "Projects",
+      navReferences: "References",
+      resume: "Resume",
+      heroDesc:
+        "Passionate about creating functional, user-centered digital solutions with experience across web, mobile, and data-driven projects. I bridge technical innovation and exceptional user experience.",
+      getInTouch: "Get In Touch",
+      viewProjects: "View Projects",
+      aboutTitle: "About Me",
+      aboutSubtitle: "Dedicated system developer with a passion for solving real-world problems",
+      aboutP1:
+        "Hi, I'm Arif Azinuddin, a dedicated system developer with comprehensive experience in full-stack web and mobile development. I thrive on solving real-world problems through clean, efficient code and intuitive design.",
+      aboutP2:
+        "My expertise spans across multiple programming languages and frameworks, allowing me to build scalable solutions that prioritize both functionality and user experience. I'm constantly learning and adapting to new technologies to deliver cutting-edge solutions.",
+      statLanguages: "Languages",
+      statProjects: "Projects",
+      statCertificates: "Certificates",
+      expTitle: "Experience & Education",
+      expSubtitle: "My professional journey and academic background",
+      tabWork: "Work Experience",
+      tabEducation: "Education",
+      tabCertificates: "Certificates",
+      skillsTitle: "Technical Skills",
+      skillsSubtitle: "A comprehensive toolkit for building modern applications",
+      skillLanguages: "Languages",
+      skillFrameworks: "Frameworks",
+      skillTools: "Tools & Technologies",
+      skillIdes: "IDEs & Platforms",
+      skillSoft: "Soft Skills",
+      softCommunication: "Communication",
+      softTeamwork: "Teamwork",
+      softProblemSolving: "Problem-Solving",
+      softLeadership: "Leadership",
+      softAdaptability: "Adaptability",
+      projectsTitle: "Featured Projects",
+      projectsSubtitle: "A showcase of my recent work and achievements",
+      filterAll: "All Projects",
+      filterWeb: "Web",
+      filterMobile: "Mobile",
+      filterAI: "AI/ML",
+      filterData: "Data Analytics",
+      filterNetwork: "Network",
+      filterDesign: "Design",
+      referencesTitle: "References",
+      referencesSubtitle: "Professional references who can speak to my work and character",
+      professionalReferences: "Professional References",
+      contactInformation: "Contact Information",
+      referenceNote1: "He was my industrial training supervisor.",
+      referenceNote2: "He was the supervisor for my final year project, titled GlowGuide Mobile Application.",
+      referenceNote3: "He was my academic supervisor throughout my degree program.",
+      contactEmail: "Email",
+      footerRights: "All rights reserved.",
+      liveView: "Live view",
+      viewOnGithub: "View on GitHub",
+    },
+  },
+};
+
+function getUIText(key) {
+  return i18n[currentLanguage]?.ui?.[key] || i18n.bm.ui[key] || key;
+}
+
+function translateProjectType(type) {
+  if (currentLanguage === "en") return type;
+  return i18n.bm.projectTypeMap[type] || type;
+}
+
+function translateDocumentLabel(label) {
+  if (currentLanguage === "en") return label;
+  return i18n.bm.documentLabelMap[label] || label;
+}
+
+function setText(selector, value) {
+  const el = document.querySelector(selector);
+  if (el) el.textContent = value;
+}
+
+function setHtml(selector, value) {
+  const el = document.querySelector(selector);
+  if (el) el.innerHTML = value;
+}
+
+function applyLanguage(lang = "bm") {
+  currentLanguage = lang === "en" ? "en" : "bm";
+  const t = i18n[currentLanguage].ui;
+
+  document.documentElement.lang = currentLanguage === "bm" ? "ms" : "en";
+  document.title = i18n[currentLanguage].pageTitle;
+  localStorage.setItem("portfolioLang", currentLanguage);
+
+  setText(".nav-links li:nth-child(1) a", t.navHome);
+  setText(".nav-links li:nth-child(2) a", t.navAbout);
+  setText(".nav-links li:nth-child(3) a", t.navExperience);
+  setText(".nav-links li:nth-child(4) a", t.navSkills);
+  setText(".nav-links li:nth-child(5) a", t.navProjects);
+  setText(".nav-links li:nth-child(6) a", t.navReferences);
+  setHtml(".nav-links li:nth-child(7) a", '<i class="fas fa-download"></i> ' + t.resume);
+
+  setText(".hero-description", t.heroDesc);
+  setHtml(".hero-buttons .btn-primary", '<i class="fas fa-envelope"></i> ' + t.getInTouch);
+  setHtml(".hero-buttons .btn-secondary", '<i class="fas fa-briefcase"></i> ' + t.viewProjects);
+
+  setText("#about .section-header h2", t.aboutTitle);
+  setText("#about .section-header p", t.aboutSubtitle);
+  setText("#about .about-text p:nth-child(1)", t.aboutP1);
+  setText("#about .about-text p:nth-child(2)", t.aboutP2);
+  setText("#about .stat-card:nth-child(1) p", t.statLanguages);
+  setText("#about .stat-card:nth-child(2) p", t.statProjects);
+  setText("#about .stat-card:nth-child(3) p", t.statCertificates);
+
+  setText("#experience .section-header h2", t.expTitle);
+  setText("#experience .section-header p", t.expSubtitle);
+  setHtml('.tab-btn[data-tab="work"]', '<i class="fas fa-briefcase"></i> ' + t.tabWork);
+  setHtml('.tab-btn[data-tab="education"]', '<i class="fas fa-graduation-cap"></i> ' + t.tabEducation);
+  setHtml('.tab-btn[data-tab="certificates"]', '<i class="fas fa-certificate"></i> ' + t.tabCertificates);
+
+  setText("#skills .section-header h2", t.skillsTitle);
+  setText("#skills .section-header p", t.skillsSubtitle);
+  setText("#skills .skill-card:nth-child(1) h3", t.skillLanguages);
+  setText("#skills .skill-card:nth-child(2) h3", t.skillFrameworks);
+  setText("#skills .skill-card:nth-child(3) h3", t.skillTools);
+  setText("#skills .skill-card:nth-child(4) h3", t.skillIdes);
+  setText("#skills .skill-card:nth-child(5) h3", t.skillSoft);
+  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(1)", t.softCommunication);
+  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(2)", t.softTeamwork);
+  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(3)", t.softProblemSolving);
+  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(4)", t.softLeadership);
+  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(5)", t.softAdaptability);
+
+  setText("#projects .section-header h2", t.projectsTitle);
+  setText("#projects .section-header p", t.projectsSubtitle);
+  setHtml('.filter-btn[data-filter="all"]', '<i class="fas fa-th"></i> ' + t.filterAll);
+  setHtml('.filter-btn[data-filter="web"]', '<i class="fas fa-globe"></i> ' + t.filterWeb);
+  setHtml('.filter-btn[data-filter="mobile"]', '<i class="fas fa-mobile-alt"></i> ' + t.filterMobile);
+  setHtml('.filter-btn[data-filter="ai"]', '<i class="fas fa-brain"></i> ' + t.filterAI);
+  setHtml('.filter-btn[data-filter="data"]', '<i class="fas fa-chart-bar"></i> ' + t.filterData);
+  setHtml('.filter-btn[data-filter="network"]', '<i class="fas fa-network-wired"></i> ' + t.filterNetwork);
+  setHtml('.filter-btn[data-filter="design"]', '<i class="fas fa-pen-nib"></i> ' + t.filterDesign);
+
+  setText("#contact .section-header h2", t.referencesTitle);
+  setText("#contact .section-header p", t.referencesSubtitle);
+  setHtml("#contact .contact-form-wrapper h3", '<i class="fas fa-address-book"></i> ' + t.professionalReferences);
+  setHtml("#contact .contact-info-wrapper h3", '<i class="fas fa-address-card"></i> ' + t.contactInformation);
+  setHtml(
+    "#contact .reference-card:nth-child(1) .reference-note",
+    '<i class="fas fa-info-circle"></i> ' + t.referenceNote1
+  );
+  setHtml(
+    "#contact .reference-card:nth-child(2) .reference-note",
+    '<i class="fas fa-info-circle"></i> ' + t.referenceNote2
+  );
+  setHtml(
+    "#contact .reference-card:nth-child(3) .reference-note",
+    '<i class="fas fa-info-circle"></i> ' + t.referenceNote3
+  );
+  setText("#contact .contact-info-card:nth-child(1) h4", t.contactEmail);
+
+  const footer = document.querySelector("footer p");
+  const yearEl = document.getElementById("copyrightYear");
+  const yearText = yearEl ? yearEl.textContent : "2025";
+  if (footer) {
+    footer.innerHTML = `&copy; <span id="copyrightYear">${yearText}</span> Arif Azinuddin. ${t.footerRights}`;
+  }
+
+  const langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    langToggle.textContent = currentLanguage.toUpperCase();
+    langToggle.setAttribute(
+      "aria-label",
+      currentLanguage === "bm" ? "Tukar ke English" : "Switch to Bahasa Melayu"
+    );
+    langToggle.title = currentLanguage === "bm" ? "Switch to English" : "Tukar ke Bahasa Melayu";
+  }
+
+  restartTaglineAnimation();
+  renderProjects(currentFilter);
+}
 
 function renderProjects(filter = "all") {
   const projectsGrid = document.getElementById("projectsGrid");
@@ -317,7 +591,7 @@ function renderProjects(filter = "all") {
                 </div>
                 <div class="project-type">
                     <i class="fas fa-tag"></i>
-                    <span>${project.type}</span>
+                    <span>${translateProjectType(project.type)}</span>
                 </div>
             </div>
         `;
@@ -339,9 +613,6 @@ filterBtns.forEach((btn) => {
   });
 });
 
-// Initial render so "All Projects" is visible on first load
-renderProjects("all");
-
 // ========== PROJECT MODAL ==========
 function openProjectModal(projectId) {
   const project = projects.find((p) => p.id === projectId);
@@ -353,7 +624,7 @@ function openProjectModal(projectId) {
   ).innerHTML = `<i class="far fa-calendar"></i> ${project.date}`;
   document.getElementById(
     "modalType"
-  ).innerHTML = `<i class="fas fa-tag"></i> ${project.type}`;
+  ).innerHTML = `<i class="fas fa-tag"></i> ${translateProjectType(project.type)}`;
   document.getElementById("modalDescription").textContent = project.description;
 
   const linksContainer = document.getElementById("modalLinks");
@@ -365,7 +636,7 @@ function openProjectModal(projectId) {
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       a.className = "modal-btn";
-      a.innerHTML = `<i class="fas ${doc.icon}"></i> ${doc.label}`;
+      a.innerHTML = `<i class="fas ${doc.icon}"></i> ${translateDocumentLabel(doc.label)}`;
       linksContainer.appendChild(a);
     });
   }
@@ -375,7 +646,7 @@ function openProjectModal(projectId) {
     liveLink.target = "_blank";
     liveLink.rel = "noopener noreferrer";
     liveLink.className = "modal-btn modal-btn-live";
-    liveLink.innerHTML = '<i class="fas fa-external-link-alt"></i> Live view';
+    liveLink.innerHTML = `<i class="fas fa-external-link-alt"></i> ${getUIText("liveView")}`;
     linksContainer.appendChild(liveLink);
   }
   if (project.github && project.github !== "#") {
@@ -384,7 +655,7 @@ function openProjectModal(projectId) {
     githubLink.target = "_blank";
     githubLink.rel = "noopener noreferrer";
     githubLink.className = "modal-btn";
-    githubLink.innerHTML = '<i class="fab fa-github"></i> View on GitHub';
+    githubLink.innerHTML = `<i class="fab fa-github"></i> ${getUIText("viewOnGithub")}`;
     linksContainer.appendChild(githubLink);
   }
 
@@ -503,6 +774,7 @@ window.onclick = function (event) {
 
 // ========== THEME TOGGLE ==========
 const themeToggle = document.getElementById("themeToggle");
+const langToggle = document.getElementById("langToggle");
 const body = document.body;
 const themeIcon = themeToggle.querySelector("i");
 
@@ -527,6 +799,13 @@ themeToggle.addEventListener("click", () => {
 
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
+
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    const nextLanguage = currentLanguage === "bm" ? "en" : "bm";
+    applyLanguage(nextLanguage);
+  });
+}
 
 // ========== MOBILE MENU ==========
 const menuToggle = document.getElementById("menuToggle");
@@ -675,14 +954,20 @@ window.addEventListener(
 
 // ========== MULTI-TEXT TYPING ANIMATION ==========
 const tagline = document.querySelector(".tagline");
-if (tagline) {
-  const texts = ["System Developer", "Mobile App Builder", "Data Enthusiast"];
+function restartTaglineAnimation() {
+  if (!tagline) return;
+
+  const runId = ++taglineRunId;
+  const texts = i18n[currentLanguage].taglines;
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
   let isPaused = false;
 
+  tagline.textContent = "";
+
   function typeWriter() {
+    if (runId !== taglineRunId) return;
     const currentText = texts[textIndex];
 
     if (isPaused) {
@@ -710,7 +995,7 @@ if (tagline) {
     }
   }
 
-  setTimeout(typeWriter, 800);
+  setTimeout(typeWriter, 600);
 }
 
 // ========== TABS ==========
@@ -877,11 +1162,89 @@ function updateCopyrightYear() {
   }
 }
 
+// ========== APPLE CUSTOM CURSOR ==========
+function initAppleCursor() {
+  if (!document.body.classList.contains("apple-orientation")) return;
+
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  if (!finePointer) return;
+
+  const cursor = document.getElementById("appleCursor");
+  if (!cursor) return;
+
+  const interactiveSelector = [
+    "a",
+    "button",
+    "input",
+    "textarea",
+    "select",
+    "[role='button']",
+    ".btn-primary",
+    ".btn-secondary",
+    ".icon-btn",
+    ".tab-btn",
+    ".filter-btn",
+    ".social-btn",
+    ".project-card",
+    ".skill-card",
+    ".certificate-card",
+    ".reference-card",
+    ".scroll-top",
+    ".modal-close",
+  ].join(",");
+
+  let x = window.innerWidth / 2;
+  let y = window.innerHeight / 2;
+  let targetX = x;
+  let targetY = y;
+
+  function animateCursor() {
+    x += (targetX - x) * 0.24;
+    y += (targetY - y) * 0.24;
+    cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    requestAnimationFrame(animateCursor);
+  }
+
+  document.addEventListener(
+    "pointermove",
+    (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+      cursor.classList.add("visible");
+    },
+    { passive: true }
+  );
+
+  document.addEventListener("pointerdown", () => {
+    cursor.classList.add("pressed");
+  });
+
+  document.addEventListener("pointerup", () => {
+    cursor.classList.remove("pressed");
+  });
+
+  document.addEventListener("pointerover", (e) => {
+    const isInteractive = !!e.target.closest(interactiveSelector);
+    cursor.classList.toggle("hover", isInteractive);
+  });
+
+  document.addEventListener("pointerleave", () => {
+    cursor.classList.remove("visible", "hover", "pressed");
+  });
+
+  window.addEventListener("blur", () => {
+    cursor.classList.remove("visible", "hover", "pressed");
+  });
+
+  requestAnimationFrame(animateCursor);
+}
+
 // ========== INITIALIZE ==========
 function initPortfolio() {
   updateCopyrightYear();
-  renderProjects("all");
+  applyLanguage(currentLanguage);
   createParticles();
+  initAppleCursor();
   const projectsSection = document.getElementById("projects");
   if (projectsSection && projectsSection.classList.contains("fade-in")) {
     observer.observe(projectsSection);

@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Tuan Khalidah Syazwana - System Developer Portfolio. Showcasing web development, mobile applications, and data-driven projects with expertise in Java, Python, Laravel, and more.">
+        content="Arif Azinuddin - System Developer Portfolio. Showcasing web development, mobile applications, and data-driven projects with expertise in Java, Python, Laravel, and more.">
     <meta name="keywords"
-        content="System Developer, Software Engineer, Web Developer, Mobile App Developer, Portfolio, Tuan Khalidah Syazwana">
-    <meta name="author" content="Tuan Khalidah Syazwana">
+        content="System Developer, Software Engineer, Web Developer, Mobile App Developer, Portfolio, Arif Azinuddin">
+    <meta name="author" content="Arif Azinuddin">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Tuan Khalidah Syazwana | System Developer">
+    <meta property="og:title" content="Arif Azinuddin | System Developer">
     <meta property="og:description"
         content="System Developer passionate about creating functional, user-centered digital solutions">
     <meta property="og:image" content="assets/images/gambar-passport.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Tuan Khalidah Syazwana | System Developer">
+    <meta property="twitter:title" content="Arif Azinuddin | System Developer">
     <meta property="twitter:description"
         content="System Developer passionate about creating functional, user-centered digital solutions">
 
-    <title>Tuan Khalidah Syazwana | System Developer</title>
+    <title>Arif Azinuddin | System Developer</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png" style="border-radius: 50%;">
 
     <!-- Font Awesome -->
@@ -42,9 +42,37 @@
         gtag('js', new Date());
         gtag('config', 'G-7XJ6KXWX9T');
     </script>
+    <style>
+        .hero-content {
+            perspective: 1100px;
+        }
+
+        .hero-image-wrapper {
+            transform-style: preserve-3d;
+            transition: transform 220ms ease-out;
+            will-change: transform;
+        }
+
+        .hero h1 {
+            transform-style: preserve-3d;
+            animation: floatName3d 6s ease-in-out infinite;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        @keyframes floatName3d {
+            0%,
+            100% {
+                transform: translateZ(0px) rotateX(0deg);
+            }
+
+            50% {
+                transform: translateZ(24px) rotateX(8deg);
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="apple-orientation">
     <!-- Animated Background -->
     <div class="bg-animation">
         <div class="shape shape-1"></div>
@@ -54,10 +82,15 @@
         <div class="particles" id="particles"></div>
     </div>
 
+    <div class="apple-cursor" id="appleCursor" aria-hidden="true">
+        <span class="apple-cursor-ring"></span>
+        <span class="apple-cursor-core"></span>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">TKS</div>
+            <div class="logo">AA</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -69,6 +102,9 @@
                             class="fas fa-download"></i> Resume</a></li>
             </ul>
             <div class="nav-icons">
+                <button class="icon-btn lang-toggle" id="langToggle" aria-label="Tukar bahasa">
+                    BM
+                </button>
                 <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -84,11 +120,11 @@
         <div class="hero-content">
             <div class="hero-image-container">
                 <div class="hero-image-wrapper">
-                    <img src="assets/images/gambar-passport.png" alt="Tuan Khalidah Syazwana" class="hero-image">
+                    <img src="assets/images/gambar-passport.png" alt="Arif Azinuddin" class="hero-image">
                     <div class="hero-image-border"></div>
                 </div>
             </div>
-            <h1>TUAN KHALIDAH SYAZWANA</h1>
+            <h1>Arif Azinuddin</h1>
             <h2 class="tagline"></h2>
             <p class="hero-description">Passionate about creating functional, user-centered digital solutions with
                 experience across web, mobile, and data-driven projects. I bridge technical innovation and exceptional
@@ -141,7 +177,7 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>Hi, I'm Tuan Khalidah Syazwana, a dedicated system developer with comprehensive experience in
+                <p>Hi, I'm Arif Azinuddin, a dedicated system developer with comprehensive experience in
                     full-stack web and mobile development. I thrive on solving real-world problems through clean,
                     efficient code and intuitive design.</p>
                 <p>My expertise spans across multiple programming languages and frameworks, allowing me to build
@@ -835,7 +871,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; <span id="copyrightYear">2025</span> Tuan Khalidah Syazwana. All rights reserved.</p>
+        <p>&copy; <span id="copyrightYear">2025</span> Arif Azinuddin. All rights reserved.</p>
     </footer>
 
     <!-- Scroll to Top Button -->
@@ -846,6 +882,29 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        (() => {
+            const hero = document.querySelector('.hero-content');
+            const target = document.querySelector('.hero-image-wrapper');
+            if (!hero || !target) return;
+
+            const maxRotate = 12;
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+                const y = ((e.clientY - rect.top) / rect.height) * 2 - 1;
+
+                const rotateY = x * maxRotate;
+                const rotateX = -y * maxRotate;
+                target.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+            });
+
+            hero.addEventListener('mouseleave', () => {
+                target.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
+            });
+        })();
+    </script>
 </body>
 
 </html>
+
