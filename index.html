@@ -34,14 +34,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XJ6KXWX9T"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-7XJ6KXWX9T');
-    </script>
     <style>
         .hero-content {
             perspective: 1100px;
@@ -111,7 +103,7 @@
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">References</a></li>
-                <li><a href="#tictactoe" class="tictactoe-btn" id="openTicTacToe"><i class="fas fa-gamepad"></i> Fight Me</a></li>
+                <li class="mobile-fightme-shortcut"><a href="#tictactoe" class="tictactoe-btn" id="openTicTacToe"><i class="fas fa-gamepad"></i> Fight Me</a></li>
             </ul>
             <div class="nav-icons">
                 <button class="icon-btn lang-toggle" id="langToggle" aria-label="Tukar bahasa">
@@ -151,16 +143,20 @@
             </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/arif-azinuddin-a3788b22b/" target="_blank" class="social-btn"
-                    aria-label="LinkedIn" title="LinkedIn">
+                    aria-label="LinkedIn" data-hover="Connect with me on LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://www.youtube.com/@zelskieee" target="_blank" class="social-btn" aria-label="YouTube"
-                    title="YouTube">
+                    data-hover="Watch my YouTube channel">
                     <i class="fab fa-youtube"></i>
                 </a>
                 <a href="https://github.com/Zelskieee" target="_blank" class="social-btn" aria-label="GitHub"
-                    title="GitHub">
+                    data-hover="Explore my GitHub projects">
                     <i class="fab fa-github"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/i1hLFogh8NyvXxJR7?g_st=ic" target="_blank" class="social-btn" aria-label="Local Guide Google Maps"
+                    data-hover="See my Local Guide profile">
+                    <i class="fa-solid fa-street-view"></i>
                 </a>
             </div>
         </div>
