@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ms">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Arif Azinuddin - System Developer Portfolio. Showcasing web development, mobile applications, and data-driven projects with expertise in Java, Python, Laravel, and more.">
+        content="Arif Azi Portfolio - System Analyst Portfolio. Showcasing web development, mobile applications, and data-driven projects with expertise in Java, Python, Laravel, and more.">
     <meta name="keywords"
-        content="System Developer, Software Engineer, Web Developer, Mobile App Developer, Portfolio, Arif Azinuddin">
+        content="System Analyst, Project Manager,Project Coordinator, System Tester, Software Engineer, SME System Developer, Portfolio, Arif Azinuddin">
     <meta name="author" content="Arif Azinuddin">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Arif Azinuddin | System Developer">
+    <meta property="og:title" content="Arif Azinuddin | System Analyst">
     <meta property="og:description"
-        content="System Developer passionate about creating functional, user-centered digital solutions">
-    <meta property="og:image" content="assets/images/gambar-passport.png">
+        content="System Analyst passionate about creating functional, user-centered digital solutions">
+    <meta property="og:image" content="assets/img/arif-passport.PNG">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Arif Azinuddin | System Developer">
+    <meta property="twitter:title" content="Arif Azinuddin | System Analyst">
     <meta property="twitter:description"
-        content="System Developer passionate about creating functional, user-centered digital solutions">
+        content="System Analyst passionate about creating functional, user-centered digital solutions">
 
-    <title>Arif Azinuddin | System Developer</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" style="border-radius: 50%;">
+    <title>Arif Azinuddin | System Analyst</title>
+    <link rel="icon" type="image/png" href="assets/img/arif-passport.ico" style="border-radius: 50%;">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -73,6 +73,20 @@
 </head>
 
 <body class="apple-orientation">
+    <div class="welcome-loader" id="welcomeLoader" aria-live="polite" aria-label="Welcome loading screen">
+        <div class="welcome-loader-card">
+            <div class="welcome-loader-orb"></div>
+            <div class="welcome-loader-image-wrap">
+                <img src="assets/img/arif-passport.PNG" alt="Arif Azinuddin" class="welcome-loader-image">
+            </div>
+            <h2>Welcome</h2>
+            <p>Arif Azinuddin Portfolio</p>
+            <div class="welcome-loader-progress">
+                <span class="welcome-loader-progress-fill"></span>
+            </div>
+        </div>
+    </div>
+
     <!-- Animated Background -->
     <div class="bg-animation">
         <div class="shape shape-1"></div>
@@ -93,13 +107,11 @@
             <div class="logo">AA</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tools">Tools</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">References</a></li>
-                <li><a href="assets/pdf/resume-tuan-khalidah-syazwana.pdf" class="resume-btn" download><i
-                            class="fas fa-download"></i> Resume</a></li>
+                <li><a href="#tictactoe" class="tictactoe-btn" id="openTicTacToe"><i class="fas fa-gamepad"></i> Fight Me</a></li>
             </ul>
             <div class="nav-icons">
                 <button class="icon-btn lang-toggle" id="langToggle" aria-label="Tukar bahasa">
@@ -120,7 +132,7 @@
         <div class="hero-content">
             <div class="hero-image-container">
                 <div class="hero-image-wrapper">
-                    <img src="assets/images/-.png" alt="Arif Azinuddin" class="hero-image">
+                    <img src="assets/img/arif-passport.PNG" alt="Arif Azinuddin" class="hero-image" draggable="false" ondragstart="return false;">
                     <div class="hero-image-border"></div>
                 </div>
             </div>
@@ -130,105 +142,106 @@
                 experience across web, mobile, and data-driven projects. I bridge technical innovation and exceptional
                 user experience.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arifazinuddin02@gmail.com" class="btn-primary" target="_blank">
                     <i class="fas fa-envelope"></i> Get In Touch
                 </a>
                 <a href="#projects" class="btn-secondary">
-                    <i class="fas fa-briefcase"></i> View Projects
+                    <i class="fa-solid fa-briefcase fa-beat"></i> View Projects
                 </a>
             </div>
             <div class="social-links">
-                <a href="mailto:tuankhalidah@gmail.com" class="social-btn" aria-label="Email" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/tuan-khalidah-syazwana/" target="_blank" class="social-btn"
+                <a href="https://www.linkedin.com/in/arif-azinuddin-a3788b22b/" target="_blank" class="social-btn"
                     aria-label="LinkedIn" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/wanai220118" target="_blank" class="social-btn" aria-label="GitHub"
+                <a href="https://www.youtube.com/@zelskieee" target="_blank" class="social-btn" aria-label="YouTube"
+                    title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://github.com/Zelskieee" target="_blank" class="social-btn" aria-label="GitHub"
                     title="GitHub">
                     <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.facebook.com/tuankhalidah.syazwana" target="_blank" class="social-btn"
-                    aria-label="Facebook" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/tkha_syaaa/" target="_blank" class="social-btn"
-                    aria-label="Instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://x.com/jennaira_me" target="_blank" class="social-btn" aria-label="X"
-                    title="X (Twitter)">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-                <a href="https://www.tiktok.com/@khalidah.syazwana" target="_blank" class="social-btn"
-                    aria-label="TikTok" title="TikTok">
-                    <i class="fab fa-tiktok"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section fade-in">
-        <div class="section-header">
-            <h2>About Me</h2>
-            <p>Dedicated system developer with a passion for solving real-world problems</p>
+    <div class="intro-experience-transition" aria-hidden="true">
+        <div class="education-transition-arif">
+            <img src="assets/img/moving/aods.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/azlan.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/badminton.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/bald.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/ball.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/bmw.png" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/book.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/botani.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/chad.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/cool.png" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/cyber.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/dekan.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/dsi.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/eco.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/five.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/fyp.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/heritage.png" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/laksamana.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/mbip.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/mbjb.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/meeting.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/mewing.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/mic.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/pose.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/prank.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/profile.png" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/robot.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/salam.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/shahir.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/sukt.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/taklimat.png" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/tekno.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/tulis.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/yb.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/final.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/pr.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/dulang.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/adnin.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/rabbit.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/typewriter.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/good.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/yihaa.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/gokart.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/range.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/pentas.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/daulat.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/piano.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/jubah.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/malam.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/nizam.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/jomrun.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/semutar.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/library.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/pingat.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/pmw.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/karok.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
+            <img src="assets/img/moving/trim.jpg" alt="Arif Azinuddin" class="education-transition-arif-image">
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Hi, I'm Arif Azinuddin, a dedicated system developer with comprehensive experience in
-                    full-stack web and mobile development. I thrive on solving real-world problems through clean,
-                    efficient code and intuitive design.</p>
-                <p>My expertise spans across multiple programming languages and frameworks, allowing me to build
-                    scalable solutions that prioritize both functionality and user experience. I'm constantly learning
-                    and adapting to new technologies to deliver cutting-edge solutions.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <i class="fas fa-code"></i>
-                    <h3 data-count="10">0</h3>
-                    <p>Languages</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3 data-count="20">0</h3>
-                    <p>Projects</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3 data-count="10">0</h3>
-                    <p>Certificates</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>3.50</h3>
-                    <p>CGPA</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Experience Section -->
     <section id="experience" class="section fade-in">
         <div class="section-header">
             <h2>Experience & Education</h2>
-            <p>My professional journey and academic background</p>
+            <p>My journey and academic background</p>
         </div>
 
         <!-- Tabs -->
         <div class="tabs">
             <button class="tab-btn active" data-tab="work">
-                <i class="fas fa-briefcase"></i> Work Experience
+                <i class="fa-solid fa-briefcase fa-beat"></i> Work Experience
             </button>
             <button class="tab-btn" data-tab="education">
-                <i class="fas fa-graduation-cap"></i> Education
-            </button>
-            <button class="tab-btn" data-tab="certificates">
-                <i class="fas fa-certificate"></i> Certificates
-            </button>
-            <button class="tab-btn" data-tab="rhb">
-                <i class="fas fa-user-tie"></i> RHB X-Cel Star
+                <i class="fa-solid fa-user-graduate fa-beat"></i> Education
             </button>
         </div>
 
@@ -241,17 +254,55 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="experience-header">
-                                <img src="assets/images/maidam.png" alt="MAIDAM" class="experience-logo">
+                                <img src="assets/img/exp/treom.jpg" alt="Treom" class="experience-logo">
                                 <div class="experience-info">
-                                    <h3>System Developer Intern</h3>
-                                    <span class="company"><i class="fas fa-building"></i> MAIDAM</span>
+                                    <h3>Project Manager cum System Analyst</h3>
+                                    <span class="company"><i class="fas fa-building"></i> Treom Sdn Bhd</span>
                                     <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> August 2025 - January 2026
+                                        <i class="far fa-calendar"></i> March 2026
                                     </div>
                                 </div>
                             </div>
-                            <p>Gaining hands-on experience in system development, working on real-world projects and
-                                collaborating with professional development teams.</p>
+                            <p class="experience-badge">System Analyst</p>
+                            <p class="experience-badge">Project Manager</p>
+                            <p class="experience-badge">Project Coordinator</p>
+                            <p class="experience-badge">System Tester</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <img src="assets/img/exp/codebit.png" alt="CodeBit" class="experience-logo">
+                                <div class="experience-info">
+                                    <h3>System Analyst</h3>
+                                    <span class="company"><i class="fas fa-building"></i> CodeBit Sdn Bhd</span>
+                                    <div class="timeline-date">
+                                        <i class="far fa-calendar"></i> January 2025 - March 2026
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="experience-badge">System Analyst</p>
+                            <p class="experience-badge">Project Coordinator</p>
+                            <p class="experience-badge">System Tester</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <img src="assets/img/exp/coolcode.jpg" alt="Cool Code" class="experience-logo">
+                                <div class="experience-info">
+                                    <h3>System Analyst Apprentice</h3>
+                                    <span class="company"><i class="fas fa-building"></i> Cool Code Sdn Bhd</span>
+                                    <div class="timeline-date">
+                                        <i class="far fa-calendar"></i> August 2024 - January 2025
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="experience-badge">System Analyst</p>
+                            <p class="experience-badge">Project Coordinator</p>
+                            <p class="experience-badge">System Tester</p>
                         </div>
                     </div>
                 </div>
@@ -264,363 +315,53 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="experience-header">
-                                <img src="assets/images/uthm.jpeg" alt="UTHM" class="experience-logo">
+                                <img src="assets/img/education/uthm.png" alt="UTHM" class="experience-logo">
                                 <div class="experience-info">
                                     <h3>Bachelor of Computer Science (Software Engineering) with Honours</h3>
-                                    <span class="company"><i class="fas fa-university"></i> Tun Hussein Onn University
-                                        of
-                                        Malaysia, Johor</span>
+                                    <span class="company"><i class="fas fa-university"></i> Tun Hussein Onn University of Malaysia, Johor</span>
                                     <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> October 2022 - January 2026
+                                        <i class="far fa-calendar"></i> October 2021 - January 2025
                                     </div>
                                 </div>
                             </div>
-                            <div class="achievement">
-                                <i class="fas fa-star"></i> CGPA: 3.50
-                            </div>
-                            <p>Comprehensive study in software engineering principles, algorithms, data structures, and
-                                modern development practices.</p>
+                            <div class="achievement"><i class="fas fa-star"></i> CGPA: 3.89</div>
+                            <div class="achievement"><i class="fa-solid fa-award"></i> Vice-Chancellor’s Award</div>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="experience-header">
-                                <img src="assets/images/kmph.webp" alt="Matriculation" class="experience-logo">
+                                <img src="assets/img/education/uitm.png" alt="UiTM Kampus Dengkil" class="experience-logo">
                                 <div class="experience-info">
-                                    <h3>Pre-University Studies</h3>
-                                    <span class="company"><i class="fas fa-school"></i> Pahang Matriculation College,
-                                        Pahang</span>
+                                    <h3>Science Foundation</h3>
+                                    <span class="company"><i class="fas fa-university"></i> UiTM Kampus Dengkil</span>
                                     <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> October 2021 - July 2022
+                                        <i class="far fa-calendar"></i> June 2020 - April 2021
                                     </div>
                                 </div>
                             </div>
                             <div class="achievement">
-                                <i class="fas fa-star"></i> CGPA: 3.63
+                                <i class="fas fa-star"></i> CGPA: 3.67
                             </div>
-                            <p>Focused on physical sciences preparing for tertiary education in computer science and
-                                engineering.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="experience-header">
-                                <img src="assets/images/adha.png" alt="SMK Agama" class="experience-logo">
+                                <img src="assets/img/education/smkbt2.jpeg" alt="SMK Bandar Tenggara 2" class="experience-logo">
                                 <div class="experience-info">
                                     <h3>Malaysian Certificate of Education (SPM)</h3>
-                                    <span class="company"><i class="fas fa-school"></i> SMK Agama Dato' Haji Abbas,
-                                        Terengganu</span>
+                                    <span class="company"><i class="fas fa-school"></i> SMK Bandar Tenggara 2</span>
                                     <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> January 2019 - February 2021
+                                        <i class="far fa-calendar"></i> 2019
                                     </div>
                                 </div>
                             </div>
                             <div class="achievement">
-                                <i class="fas fa-trophy"></i> 7A 3B 1C
+                                <i class="fas fa-trophy"></i> 8A 2B+
                             </div>
-                            <p>Strong foundation in sciences and mathematics with excellent academic performance.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header">
-                                <img src="assets/images/adha.png" alt="PT3" class="experience-logo">
-                                <div class="experience-info">
-                                    <h3>Pentaksiran Tingkatan Tiga (PT3)</h3>
-                                    <span class="company"><i class="fas fa-school"></i> SMK Agama Dato' Haji Abbas,
-                                        Terengganu</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> January 2016 - December 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="achievement">
-                                <i class="fas fa-trophy"></i> 10A 1C
-                            </div>
-                            <p>Demonstrated exceptional academic performance in lower secondary education.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header">
-                                <img src="assets/images/skkt.png" alt="UPSR" class="experience-logo">
-                                <div class="experience-info">
-                                    <h3>Ujian Pencapaian Sekolah Rendah (UPSR)</h3>
-                                    <span class="company"><i class="fas fa-school"></i> SK Kampong Tengah,
-                                        Terengganu</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> January 2010 - December 2015
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="achievement">
-                                <i class="fas fa-trophy"></i> 5A
-                            </div>
-                            <p>Achieved excellent results in primary school education, establishing a strong academic
-                                foundation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certificates Tab -->
-            <div class="tab-pane" id="certificates">
-                <div class="certificates-grid">
-                    <!-- Newest to Oldest -->
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/sijil-tamat-intern.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-briefcase"></i>
-                        <h4>Internship Completion Certificate (System Developer Intern)</h4>
-                        <span class="cert-date">January 2026</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert11')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/data-mining.jpeg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Data Mining and Decision Making: Predictive Analytics for Business Strategies</h4>
-                        <span class="cert-date">May 2025</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert1')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/data-structure.png" alt="Certificate" class="cert-image">
-                        <i class="fas fa-code-branch"></i>
-                        <h4>Data Structures & Algorithms in Python: Sorting Algorithms</h4>
-                        <span class="cert-date">May 2025</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert2')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/power-bi.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-chart-bar"></i>
-                        <h4>Power BI Data Modelling Basics Tutorial Course</h4>
-                        <span class="cert-date">December 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert3')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/pbi-beginner.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-analytics"></i>
-                        <h4>Power BI for Beginners</h4>
-                        <span class="cert-date">November 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert4')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/sas-basic.png" alt="Certificate" class="cert-image">
-                        <i class="fas fa-database"></i>
-                        <h4>SAS Visual Analytics 1 for SAS Viya: Basics</h4>
-                        <span class="cert-date">November 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert5')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/sas-overview.png" alt="Certificate" class="cert-image">
-                        <i class="fas fa-server"></i>
-                        <h4>SAS Viya Overview</h4>
-                        <span class="cert-date">November 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert6')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/cisco.png" alt="Certificate" class="cert-image">
-                        <i class="fas fa-network-wired"></i>
-                        <h4>CCNA: Introduction to Networks</h4>
-                        <span class="cert-date">August 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert7')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/seminarwarisan.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-landmark"></i>
-                        <h4>Seminar Pemuliharaan Senibina Warisan</h4>
-                        <span class="cert-date">August 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert8')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/IMG_20260209_191109_103.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-award"></i>
-                        <h4>Dean's List Certificate (Semester I, Session 2022/2023)</h4>
-                        <span class="cert-date">June 2024</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert9')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="assets/images/sijil/IMG_20260209_191108_662.jpg" alt="Certificate" class="cert-image">
-                        <i class="fas fa-users"></i>
-                        <h4>Symposium on Education &amp; Economic Development Plan for the Young Myanmar Muslims (2023)
-                        </h4>
-                        <span class="cert-date">January 2023</span>
-                        <button class="btn-view-cert" onclick="viewCertificate('cert10')">
-                            <i class="fas fa-external-link-alt"></i> View Certificate
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RHB X-Cel Star Tab (newest to oldest; no image if programme has no picture) -->
-            <div class="tab-pane" id="rhb">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header">
-                                <img src="assets/images/rhb/mentor/Mentoring-Programme.jpg"
-                                    alt="RHB Mentoring Graduation" class="experience-logo">
-                                <div class="experience-info">
-                                    <h3>RHB X-CEL Star Mentoring Programme FY2023: Final Check-in, Closing &amp;
-                                        Graduation</h3>
-                                    <span class="company"><i class="fas fa-building"></i> RHB Banking Group</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 8 December 2023, 8:45 AM – 12:45 PM
-                                    </div>
-                                    <div class="timeline-date">
-                                        <i class="fas fa-map-marker-alt"></i> Multi-Purpose Room, Tower 3, Level 16, RHB
-                                        Centre
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Graduation and final check-in for the FY2023 mentoring programme.</p>
-                            <button type="button" class="btn-view-cert"
-                                onclick="viewCertificateByPath('assets/images/rhb/mentor/Mentoring-Programme.jpg')"><i
-                                    class="fas fa-certificate"></i> View certificate</button>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header no-logo">
-                                <div class="experience-info">
-                                    <h3>RHB X-CEL Star Mentoring Programme FY2023: Midpoint Check-in for Mentees</h3>
-                                    <span class="company"><i class="fas fa-building"></i> RHB Banking Group</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 21 July 2023, 11:15 AM – 12:15 PM
-                                    </div>
-                                    <div class="timeline-date">
-                                        <i class="fas fa-map-marker-alt"></i> Meeting Room Pahang, RHB Centre Tower 1
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Midpoint check-in session for mentees in the FY2023 mentoring programme.</p>
-                            <button type="button" class="btn-gallery" onclick="openRHBGallery('rhb-mentor')"><i
-                                    class="fas fa-images"></i> View photo gallery</button>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header">
-                                <img src="assets/images/rhb/award/award.jpg" alt="Majlis Anugerah Biasiswa"
-                                    class="experience-logo">
-                                <div class="experience-info">
-                                    <h3>Majlis Anugerah Biasiswa RHB X-Cel Star</h3>
-                                    <span class="company"><i class="fas fa-award"></i> RHB Foundation</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 22 February 2023
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Attended the RHB X-Cel Star scholarship awards ceremony, recognising scholars and
-                                celebrating achievements under the programme. Received the award certificate and took
-                                part in the official event with fellow scholars and the RHB Foundation team.</p>
-                            <button type="button" class="btn-view-cert"
-                                onclick="viewCertificateByPath('assets/images/rhb/award/award.jpg')"><i
-                                    class="fas fa-certificate"></i> View certificate</button>
-                            <button type="button" class="btn-gallery" onclick="openRHBGallery('rhb-award')"><i
-                                    class="fas fa-images"></i> View photo gallery</button>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header">
-                                <img src="assets/images/dummy.png" alt="RHB English Training" class="experience-logo">
-                                <div class="experience-info">
-                                    <h3>RHB X-Cel Star English Communications &amp; Confidence Training</h3>
-                                    <span class="company"><i class="fas fa-chalkboard-teacher"></i> RHB X-Cel Star
-                                        Programme</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 3–4 August 2022
-                                    </div>
-                                    <div class="timeline-date">
-                                        <i class="fas fa-map-marker-alt"></i> RHB Complex Bangi (IT &amp; Training
-                                        Center)
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Intensive communication and confidence-building programme to enhance professional English
-                                communication skills, presentation ability, and personal branding.</p>
-                            <button type="button" class="btn-view-cert"
-                                onclick="viewCertificateByPath('assets/images/rhb/RHB-X-cel-Star-English-Communications-Confidence-Training-banner.webp')"><i
-                                    class="fas fa-certificate"></i> View certificate</button>
-                            <button type="button" class="btn-gallery" onclick="openRHBGallery('rhb-english')"><i
-                                    class="fas fa-images"></i> View photo gallery</button>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header no-logo">
-                                <div class="experience-info">
-                                    <h3>Constellation Program</h3>
-                                    <span class="company"><i class="fas fa-users"></i> RHB Foundation</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> July 2022 – December 2022
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Joined a cross-batch scholar group that met monthly for online discussions on
-                                foundation-assigned topics. Gained valuable insights that supported my transition to
-                                university and contributed to my personal and academic development.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header no-logo">
-                                <div class="experience-info">
-                                    <h3>RHB Mentoring Programme: Meet and Greet Session</h3>
-                                    <span class="company"><i class="fas fa-building"></i> RHB Banking Group</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 14 April 2022, 2:30 PM – 4:30 PM
-                                    </div>
-                                    <div class="timeline-date">
-                                        <i class="fas fa-video"></i> Zoom
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Online meet and greet session for the RHB mentoring programme.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="experience-header no-logo">
-                                <div class="experience-info">
-                                    <h3>Friendly Chat Session with RHB Foundation's Head of Programme</h3>
-                                    <span class="company"><i class="fas fa-comments"></i> RHB Foundation</span>
-                                    <div class="timeline-date">
-                                        <i class="far fa-calendar"></i> 26 January 2022, 5:00 PM
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Friendly chat session with the head of programme at RHB Foundation.</p>
                         </div>
                     </div>
                 </div>
@@ -628,68 +369,71 @@
         </div>
     </section>
 
-    <!-- Skills Section with Tech Stack Icons -->
-    <section id="skills" class="section fade-in">
+    <!-- Tools Section with Tech Stack Icons -->
+    <section id="tools" class="section fade-in">
         <div class="section-header">
-            <h2>Technical Skills</h2>
+            <h2>Technical Tools</h2>
             <p>A comprehensive toolkit for building modern applications</p>
         </div>
         <div class="skills-grid">
             <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Languages</h3>
+                <i class="fa-solid fa-bars-progress"></i>
+                <h3>Project Management</h3>
                 <div class="tech-icons">
-                    <i class="devicon-python-plain colored" title="Python"></i>
-                    <i class="devicon-java-plain colored" title="Java"></i>
-                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                    <i class="devicon-cplusplus-plain colored" title="C++"></i>
-                    <i class="devicon-php-plain colored" title="PHP"></i>
-                    <i class="devicon-html5-plain colored" title="HTML5"></i>
-                    <i class="devicon-css3-plain colored" title="CSS3"></i>
-                    <i class="devicon-r-plain colored" title="R"></i>
-                </div>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-layer-group"></i>
-                <h3>Frameworks</h3>
-                <div class="tech-icons">
-                    <i class="devicon-laravel-plain colored" title="Laravel"></i>
-                    <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-                    <i class="devicon-pandas-original colored" title="Pandas"></i>
+                    <i class="devicon-trello-plain colored" title="Trello"></i>
+                    <i class="devicon-jira-plain colored" title="Jira"></i>
+                    <i class="devicon-canva-original colored" title="Canva"></i>
                 </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-tools"></i>
                 <h3>Tools & Technologies</h3>
                 <div class="tech-icons">
-                    <i class="devicon-git-plain colored" title="Git"></i>
                     <i class="devicon-github-original" title="GitHub"></i>
-                    <i class="devicon-firebase-plain colored" title="Firebase"></i>
                     <i class="devicon-mysql-plain colored" title="MySQL"></i>
-                    <i class="devicon-linux-plain" title="Linux"></i>
-                    <i class="devicon-ubuntu-plain colored" title="Ubuntu"></i>
-                    <i class="devicon-kali-plain colored" title="Kali Linux"></i>
+                    <i class="devicon-figma-plain colored" title="Figma"></i>
+                    <i class="devicon-selenium-original colored" title="Selenium"></i>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Languages</h3>
+                <div class="tech-icons">
+                    <i class="devicon-php-plain colored" title="PHP"></i>
+                    <i class="devicon-html5-plain colored" title="HTML5"></i>
+                    <i class="devicon-css3-plain colored" title="CSS3"></i>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-laptop-code"></i>
-                <h3>IDEs & Platforms</h3>
+                <h3>Integrated Development Environment</h3>
                 <div class="tech-icons">
                     <i class="devicon-vscode-plain colored" title="VS Code"></i>
-                    <i class="devicon-intellij-plain colored" title="IntelliJ IDEA"></i>
-                    <i class="devicon-androidstudio-plain colored" title="Android Studio"></i>
-                    <i class="devicon-rstudio-plain colored" title="RStudio"></i>
                 </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-users"></i>
                 <h3>Soft Skills</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Communication</span>
-                    <span class="skill-tag">Teamwork</span>
                     <span class="skill-tag">Problem-Solving</span>
-                    <span class="skill-tag">Leadership</span>
-                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Introvert</span>
+                </div>
+            </div>
+            <div class="skill-card" style="background-color: rgb(226, 226, 226)">
+                <i class="fa-solid fa-gamepad fa-bounce"></i>
+                <h5>Drag & Drop These Icons To Other Card</h5>
+                <div class="tech-icons">
+                    <i class="devicon-react-original colored" title="React"></i>    
+                    <i class="devicon-jupyter-plain-wordmark colored" title="Jupyter Notebook"></i>
+                    <i class="devicon-python-plain colored" title="Python"></i>
+                    <i class="devicon-csharp-plain colored" title="C#"></i>
+                    <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+                    <i class="devicon-java-plain colored" title="Java"></i>
+                    <i class="devicon-ubuntu-plain colored" title="Ubuntu"></i>
+                    <i class="devicon-flutter-plain colored" title="Flutter"></i>
+                    <i class="devicon-android-plain colored" title="Android"></i>
+                    <i class="devicon-apple-original colored" title="iOS"></i>
                 </div>
             </div>
         </div>
@@ -702,33 +446,21 @@
             <p>A showcase of my recent work and achievements</p>
         </div>
 
-        <!-- Project Filters -->
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">
-                <i class="fas fa-th"></i> All Projects
-            </button>
-            <button class="filter-btn" data-filter="web">
-                <i class="fas fa-globe"></i> Web
-            </button>
-            <button class="filter-btn" data-filter="mobile">
-                <i class="fas fa-mobile-alt"></i> Mobile
-            </button>
-            <button class="filter-btn" data-filter="ai">
-                <i class="fas fa-brain"></i> AI/ML
-            </button>
-            <button class="filter-btn" data-filter="data">
-                <i class="fas fa-chart-bar"></i> Data Analytics
-            </button>
-            <button class="filter-btn" data-filter="network">
-                <i class="fas fa-network-wired"></i> Network
-            </button>
-            <button class="filter-btn" data-filter="design">
-                <i class="fas fa-pen-nib"></i> Design
-            </button>
-        </div>
+        <div class="projects-layout">
+            <aside class="projects-sidebar" aria-label="Project filters">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="project">
+                        <i class="fa-solid fa-table-list"></i> Projects
+                    </button>
+                    <button class="filter-btn" data-filter="sme">
+                        <i class="fa-solid fa-store"></i> SME Projects
+                    </button>
+                </div>
+            </aside>
 
-        <div class="projects-grid" id="projectsGrid">
-            <!-- Projects will be dynamically loaded here -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
         </div>
     </section>
 
@@ -769,6 +501,133 @@
         </div>
     </div>
 
+    <!-- Tic Tac Toe Modal -->
+    <div id="ticTacToeModal" class="modal">
+        <div class="modal-content tictactoe-modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="tictactoe-body fightme-body">
+                <div class="fightme-header">
+                    <button type="button" class="fightme-switch-btn" id="fightMePrevGame"
+                        aria-label="Previous game">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h2 id="fightMeTitle"><i class="fas fa-robot"></i> Arif Azinuddin Bot</h2>
+                    <button type="button" class="fightme-switch-btn" id="fightMeNextGame"
+                        aria-label="Next game">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="fightme-game-panel" id="gamePanelTicTacToe">
+                    <div class="fleabag-scoreboard">
+                        <div class="fleabag-score-team">
+                            <span class="fleabag-score-label">You</span>
+                            <span class="fleabag-score-value" id="tttUserScore">0</span>
+                        </div>
+                        <div class="fleabag-score-divider">-</div>
+                        <div class="fleabag-score-team">
+                            <span class="fleabag-score-label">Arif Azinuddin</span>
+                            <span class="fleabag-score-value" id="tttBotScore">0</span>
+                        </div>
+                    </div>
+                    <p class="tictactoe-status" id="tictactoeStatus">Your move. Arif Azinuddin bot plays fair.</p>
+                    <div class="tictactoe-board" id="tictactoeBoard">
+                        <button type="button" class="tictactoe-cell" data-index="0" aria-label="Cell 1"></button>
+                        <button type="button" class="tictactoe-cell" data-index="1" aria-label="Cell 2"></button>
+                        <button type="button" class="tictactoe-cell" data-index="2" aria-label="Cell 3"></button>
+                        <button type="button" class="tictactoe-cell" data-index="3" aria-label="Cell 4"></button>
+                        <button type="button" class="tictactoe-cell" data-index="4" aria-label="Cell 5"></button>
+                        <button type="button" class="tictactoe-cell" data-index="5" aria-label="Cell 6"></button>
+                        <button type="button" class="tictactoe-cell" data-index="6" aria-label="Cell 7"></button>
+                        <button type="button" class="tictactoe-cell" data-index="7" aria-label="Cell 8"></button>
+                        <button type="button" class="tictactoe-cell" data-index="8" aria-label="Cell 9"></button>
+                        <span id="tictactoeWinLine" class="tictactoe-win-line" aria-hidden="true"></span>
+                    </div>
+                    <div class="tictactoe-actions">
+                        <button type="button" class="modal-btn" id="tictactoeRestart">
+                            <i class="fas fa-rotate-right"></i> Play Again
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fightme-game-panel is-hidden" id="gamePanelFleabag">
+                    <div class="fleabag-scoreboard">
+                            <div class="fleabag-score-team">
+                                <span class="fleabag-score-label">You</span>
+                                <span class="fleabag-score-value" id="fleabagUserScore">0</span>
+                            </div>
+                            <div class="fleabag-score-divider">-</div>
+                            <div class="fleabag-score-team">
+                                <span class="fleabag-score-label">Arif Azinuddin</span>
+                                <span class="fleabag-score-value" id="fleabagBotScore">0</span>
+                            </div>
+                        </div>
+                    <p class="tictactoe-status" id="fleabagStatus">You are Fleabag. Arif Azinuddin is Mutt.</p>
+                    <canvas id="fleabagCanvas" width="620" height="320" aria-label="Fleabag vs Mutt game area"></canvas>
+                    <div class="fleabag-hud">
+                        <div class="fleabag-health">
+                            <span>Fleabag HP: <strong id="fleabagFleabagHp">100</strong></span>
+                            <span>Mutt HP: <strong id="fleabagMuttHp">100</strong></span>
+                        </div>
+                        <div class="fleabag-health-bars">
+                            <div class="fleabag-hp-track"><span id="fleabagFleabagHpBar"></span></div>
+                            <div class="fleabag-hp-track"><span id="fleabagMuttHpBar"></span></div>
+                        </div>
+                        <div class="fleabag-bot-usage" id="fleabagBotUsage">Bot power uses - 2x: 0/5 | BigBall: 0/5 | Heal: 0/5</div>
+                    </div>
+                    <div class="fleabag-power-options" id="fleabagPowerOptions">
+                        <button type="button" class="fleabag-power-btn active" data-power="multi"><i class="fa-solid fa-2 fa-beat-fade"></i> 2x Throw</button>
+                        <button type="button" class="fleabag-power-btn" data-power="bigball"><i class="fa-solid fa-bowling-ball fa-beat-fade"></i> Big Ball (x2 DMG)</button>
+                        <button type="button" class="fleabag-power-btn" data-power="heal"><i class="fa-solid fa-heart-circle-plus fa-beat-fade"></i> Heal +50</button>
+                    </div>
+                    <div class="fleabag-charge">
+                        <div class="fleabag-charge-track">
+                            <span id="fleabagChargeFill"></span>
+                        </div>
+                        <p id="fleabagThrowHint">Hold Throw to charge power, then release.</p>
+                    </div>
+                    <div class="tictactoe-actions">
+                        <button type="button" class="modal-btn" id="fleabagThrowBtn">
+                            <i class="fa-solid fa-bomb fa-bounce"></i> Hold to Throw
+                        </button>
+                        <button type="button" class="modal-btn" id="fleabagRestart">
+                            <i class="fas fa-rotate-right"></i> Restart
+                        </button>
+                    </div>
+                    <div class="fleabag-finish-flag is-hidden" id="fleabagFinishFlag">🏳️</div>
+                </div>
+
+                <div class="fightme-game-panel is-hidden" id="gamePanelDamHaji">
+                    <div class="fleabag-scoreboard">
+                        <div class="fleabag-score-team">
+                            <span class="fleabag-score-label">You</span>
+                            <span class="fleabag-score-value" id="damhajiUserScore">0</span>
+                        </div>
+                        <div class="fleabag-score-divider">-</div>
+                        <div class="fleabag-score-team">
+                            <span class="fleabag-score-label">Arif Azinuddin</span>
+                            <span class="fleabag-score-value" id="damhajiBotScore">0</span>
+                        </div>
+                    </div>
+                    <p class="tictactoe-status" id="damhajiStatus">Your turn (White). Capture is mandatory.</p>
+                    <div class="damhaji-board-wrap">
+                        <div class="damhaji-board" id="damhajiBoard" aria-label="Dam Haji board"></div>
+                    </div>
+                    <div class="damhaji-legend">
+                        <span><i class="fa-regular fa-circle"></i> You</span>
+                        <span><i class="fa-solid fa-circle"></i> Arif Azinuddin</span>
+                        <span><i class="fa-solid fa-bolt"></i> Haji piece moves both directions</span>
+                    </div>
+                    <div class="tictactoe-actions">
+                        <button type="button" class="modal-btn" id="damhajiRestart">
+                            <i class="fas fa-rotate-right"></i> Restart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- References Section -->
     <section id="contact" class="section fade-in">
         <div class="section-header">
@@ -781,97 +640,178 @@
             <div class="contact-form-wrapper">
                 <h3><i class="fas fa-address-book"></i> Professional References</h3>
                 <div class="references-list">
-                    <div class="reference-card">
-                        <div class="reference-header">
-                            <div class="reference-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <div>
-                                <h4>En. Ahmad Nordin Bin Alias</h4>
-                                <p class="reference-role">Penolong Kanan Setiausaha (Teknologi Maklumat)</p>
-                                <p class="reference-organization">Majlis Agama Islam Dan Adat Melayu Terengganu (MAIDAM)
-                                </p>
+                    <div class="references-row" data-reference-carousel>
+                        <div class="references-row-head">
+                            <h4 class="references-row-title"><i class="fas fa-briefcase"></i> Career Reference</h4>
+                            <div class="reference-nav-group">
+                                <button type="button" class="reference-nav-btn" data-direction="prev" aria-label="Previous career reference">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="reference-nav-btn" data-direction="next" aria-label="Next career reference">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="reference-body">
-                            <p><i class="fas fa-phone"></i> 09-630 3099</p>
-                            <p><i class="fas fa-envelope"></i> <a
-                                    href="mailto:anordin@maidam.gov.my">anordin@maidam.gov.my</a></p>
-                            <p class="reference-note"><i class="fas fa-info-circle"></i> He was my industrial training
-                                supervisor.</p>
+                        <div class="references-viewport">
+                            <div class="references-track">
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/ceo.png" alt="Mr Ariff Aizat" class="reference-logo" style="width: 100%;">
+                                            </div>
+                                            <div>
+                                                <h4>Mr Ariff Aizat</h4>
+                                                <p class="reference-role">Chief Executive Officer</p>
+                                                <p class="reference-organization">CodeBit Sdn Bhd
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/cto.png" alt="Mr Ridzwan Azhar" class="reference-logo" style="width: 100%;">
+                                            </div>
+                                            <div>
+                                                <h4>Mr Ridzwan Azhar</h4>
+                                                <p class="reference-role">Chief Technology Officer</p>
+                                                <p class="reference-organization">CodeBit Sdn Bhd
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/coo.png" alt="Mr Daeng Termizi" class="reference-logo" style="width: 100%;">
+                                            </div> 
+                                            <div>
+                                                <h4>Mr Daeng Termizi</h4>
+                                                <p class="reference-role">Chief Operation Officer</p>
+                                                <p class="reference-organization">Treom Sdn Bhd
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="reference-card">
-                        <div class="reference-header">
-                            <div class="reference-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <div>
-                                <h4>Dr. Mohd Hamdi Irwan Bin Hamzah</h4>
-                                <p class="reference-role">DS13 Senior Lecturer</p>
-                                <p class="reference-organization">Faculty of Computer Science and Information
-                                    Technology, UTHM</p>
-                            </div>
-                        </div>
-                        <div class="reference-body">
-                            <p><i class="fas fa-phone"></i> 07-453 3757</p>
-                            <p><i class="fas fa-envelope"></i> <a href="mailto:hamdi@uthm.edu.my">hamdi@uthm.edu.my</a>
-                            </p>
-                            <p class="reference-note"><i class="fas fa-info-circle"></i> He was the supervisor for my
-                                final year project, titled GlowGuide Mobile Application.</p>
-                        </div>
-                    </div>
-                    <div class="reference-card">
-                        <div class="reference-header">
-                            <div class="reference-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <div>
-                                <h4>Dr. Noor Zuraidin Bin Mohd Safar</h4>
-                                <p class="reference-role">DS13 Senior Lecturer</p>
-                                <p class="reference-organization">Faculty of Computer Science and Information
-                                    Technology, UTHM</p>
+                    <div class="references-row" data-reference-carousel>
+                        <div class="references-row-head">
+                            <h4 class="references-row-title"><i class="fas fa-user-graduate"></i> Academic References</h4>
+                            <div class="reference-nav-group">
+                                <button type="button" class="reference-nav-btn" data-direction="prev" aria-label="Previous academic reference">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="reference-nav-btn" data-direction="next" aria-label="Next academic reference">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="reference-body">
-                            <p><i class="fas fa-phone"></i> 07-453 3663</p>
-                            <p><i class="fas fa-envelope"></i> <a
-                                    href="mailto:zuraidin@uthm.edu.my">zuraidin@uthm.edu.my</a></p>
-                            <p class="reference-note"><i class="fas fa-info-circle"></i> He was my academic supervisor
-                                throughout my degree program.</p>
+                        <div class="references-viewport">
+                            <div class="references-track">
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/drzanes.png" alt="Dr Zanes" class="reference-logo" style="width: 100%;">
+                                            </div>
+                                            <div>
+                                                <h4>Dr. Mohd Zanes Bin Sahid</h4>
+                                                <p class="reference-organization">Faculty of Computer Science and Information Technology, UTHM</p>
+                                            </div>
+                                        </div>
+                                        <div class="reference-body">
+                                            <p><i class="fas fa-phone"></i> 07-453 3764</p>
+                                            <p><i class="fas fa-envelope"></i> <a href="mailto:zanes@uthm.edu.my">zanes@uthm.edu.my</a>
+                                            </p>
+                                            <p class="reference-note" id="referenceNoteAcademic1"><i class="fas fa-info-circle"></i> Academic Advisor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/profzainuri.png" alt="Prof Zainuri" class="reference-logo" style="width: 100%;">
+                                            </div>
+                                            <div>
+                                                <h4>Prof. Madya Dr. Mohd Zainuri Bin Saringat</h4>
+                                                <p class="reference-organization">Faculty of Computer Science and Information Technology, UTHM</p>
+                                            </div>
+                                        </div>
+                                        <div class="reference-body">
+                                            <p><i class="fas fa-phone"></i> 07-453 3660</p>
+                                            <p><i class="fas fa-envelope"></i> <a
+                                                    href="mailto:zainuri@uthm.edu.my">zainuri@uthm.edu.my</a></p>
+                                            <p class="reference-note" id="referenceNoteAcademic2"><i class="fas fa-info-circle"></i>  FYP Supervisor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reference-slide">
+                                    <div class="reference-card">
+                                        <div class="reference-header">
+                                            <div class="reference-icon">
+                                                <img src="assets/img/reference/drezayana.png" alt="Dr Ezayana" class="reference-logo" style="width: 100%;">
+                                            </div>
+                                            <div>
+                                                <h4>Dr. Nurezayana Binti Zainal</h4>
+                                                <p class="reference-organization">Faculty of Computer Science and Information Technology, UTHM</p>
+                                            </div>
+                                        </div>
+                                        <div class="reference-body">
+                                            <p><i class="fas fa-phone"></i> 07-453 3784</p>
+                                            <p><i class="fas fa-envelope"></i> <a
+                                                    href="mailto:nurezayana@uthm.edu.my">nurezayana@uthm.edu.my</a></p>
+                                            <p class="reference-note" id="referenceNoteAcademic3"><i class="fas fa-info-circle"></i>  Faculty Supervisor During Internship</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact Info -->
             <div class="contact-info-wrapper">
-                <h3><i class="fas fa-address-card"></i> Contact Information</h3>
-                <div class="contact-info-cards">
-                    <div class="contact-info-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <a href="mailto:tuankhalidah@gmail.com">tuankhalidah@gmail.com</a>
-                    </div>
-                    <div class="contact-info-card">
-                        <i class="fab fa-linkedin"></i>
-                        <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/tuan-khalidah-syazwana/"
-                            target="_blank">tuan-khalidah-syazwana</a>
-                    </div>
-                    <div class="contact-info-card">
-                        <i class="fab fa-github"></i>
-                        <h4>GitHub</h4>
-                        <a href="https://github.com/wanai220118" target="_blank">wanai220118</a>
-                    </div>
+                <h3><i class="fas fa-signature"></i> Drawing Space</h3>
+                <p class="signature-intro" id="signatureIntro">Draw anything, add your name and message, then export it as a fun keepsake.</p>
+
+                <div class="signature-fields">
+                    <input type="text" id="signatureName" placeholder="Your name">
+                    <textarea id="signatureMessage" rows="4" placeholder="Write your message here"></textarea>
                 </div>
+
+                <div class="signature-pad-wrap">
+                    <canvas id="signaturePad" class="signature-pad" aria-label="Digital signature pad"></canvas>
+                </div>
+                <p class="signature-hint" id="signatureHint">Use mouse or touch to draw freely on the canvas.</p>
+
+                <div class="signature-actions">
+                    <button type="button" class="modal-btn signature-clear-btn" id="clearSignature">
+                        <i class="fas fa-eraser"></i> Clear
+                    </button>
+                    <button type="button" class="modal-btn signature-send-btn" id="signatureExportImage">
+                        <i class="fas fa-image"></i> Export PNG
+                    </button>
+                    <button type="button" class="modal-btn signature-send-btn" id="signatureExportPdf">
+                        <i class="fas fa-file-pdf"></i> Export PDF
+                    </button>
+                </div>
+                <p id="signatureStatus" class="signature-status" aria-live="polite"></p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; <span id="copyrightYear">2025</span> Arif Azinuddin. All rights reserved.</p>
+        <p><span id="copyrightYear">2025</span> Arif Azinuddin. All rights reserved.</p>
     </footer>
 
     <!-- Scroll to Top Button -->
@@ -879,8 +819,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
     <script>
         (() => {
@@ -907,4 +846,5 @@
 </body>
 
 </html>
+
 

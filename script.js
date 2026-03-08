@@ -1,349 +1,163 @@
-// ========== EMAILJS CONFIGURATION ==========
-emailjs.init("mMer3rnqTxT5ZF7v-"); // Replace with your EmailJS User ID
-
-// ========== CERTIFICATE IMAGES ==========
-const certificateImages = [
-  "assets/images/sijil/data-mining.jpeg",
-  "assets/images/sijil/data-structure.png",
-  "assets/images/sijil/power-bi.jpg",
-  "assets/images/sijil/pbi-beginner.jpg",
-  "assets/images/sijil/sas-basic.png",
-  "assets/images/sijil/sas-overview.png",
-  "assets/images/sijil/cisco.png",
-  "assets/images/sijil/seminarwarisan.jpg",
-  "assets/images/sijil/IMG_20260209_191109_103.jpg",
-  "assets/images/sijil/IMG_20260209_191108_662.jpg",
-  "assets/images/sijil/sijil-tamat-intern.jpg",
-];
-
-// ========== PROJECTS DATA ==========
+﻿// ========== PROJECTS DATA ==========
 // Ordered newest to oldest
 const projects = [
   {
     id: 1,
-    title: "CNC Menu and Ordering",
-    date: "February 2026",
-    type: "E-Commerce Website",
-    category: "web",
-    icon: "fa-shopping-cart",
-    description: `Developed a modern, responsive e-commerce website featuring a structured product catalog, best-seller highlights, detailed product pages, and a dynamic shopping cart with quantity controls. Integrated a WhatsApp-based ordering system with automated message formatting and cart clearing, optimizing the checkout flow and enhancing user convenience across devices.`,
-    tech: ["HTML", "CSS", "JavaScript", "Responsive Design", "WhatsApp API"],
-    github: "https://github.com/wanai220118/cnc-menu-and-ordering",
-    liveUrl: "https://cheezncream.netlify.app/",
-    screenshots: [
-      "assets/images/project/cmo-1.png",
-      "assets/images/project/cmo-2.png",
-      "assets/images/project/cmo-3.png",
-      "assets/images/project/cmo-4.png",
-      "assets/images/project/cmo-5.png",
-      "assets/images/project/cmo-6.png",
-    ],
+    title: "MyAduan Johor",
+    type: "Web System & Mobile Application",
+    category: "project",
+    icon: "fa-solid fa-gavel fa-bounce",
+    logo: "assets/img/project/maj.png",
+    date: "2025 - 2026",
+    description: "System Analyst, Project Coordinator, and System Tester",
+    screenshots: [],
+    tech: ["Project Coordination", "System Testing", "Requirement Analysis"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 2,
-    title: "ZenFlow Tracker – Mobile Fitness Application",
-    date: "February 2026",
-    type: "Mobile Application (React Native)",
-    category: "mobile",
-    icon: "fa-running",
-    description: `Built a cross-platform fitness tracking app using React Native and Expo with offline-first architecture via AsyncStorage. Implemented exercise routines, timers, progress analytics, statistics dashboards, and data export, increasing usability for long-term tracking. Integrated video-based exercise guidance and clean UI components for improved user engagement.`,
-    tech: ["React Native", "Expo", "AsyncStorage", "JavaScript"],
-    github: "https://github.com/wanai220118/ZenFlow_Tracker",
-    screenshots: [
-      "assets/images/project/et-1.png",
-      "assets/images/project/et-2.png",
-      "assets/images/project/et-3.png",
-    ],
+    title: "Senai Airport AODS Phase 2",
+    type: "Web System",
+    category: "project",
+    icon: "fa-solid fa-plane fa-bounce",
+    logo: "assets/img/project/senai.jpg",
+    date: "2024 - 2025",
+    description: "System Analyst, Project Coordinator, and System Tester",
+    screenshots: [],
+    tech: ["System Analysis", "UAT", "Documentation"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 3,
-    title: "Sistem Pengurusan Peguam Syarie (Web-Based)",
-    date: "August 2025 – January 2026",
-    type: "Web Application",
-    category: "web",
-    icon: "fa-gavel",
-    description: `Developed a PHP–MySQL system supporting four user roles (User, Sub-Admin, Admin, Court) with role-based access control. Automated application, renewal, appeal, payment, interview, and approval workflows, significantly reducing manual processing. Designed a structured, auditable process aligned with real-world certification requirements.`,
-    tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "XAMPP"],
-    github: "https://github.com/wanai220118/Sistem-Pengurusan-Peguam-Syarie",
-    liveUrl: "https://apps.maidam.gov.my/syarie/login.php",
-    screenshots: [
-      "assets/images/project/sps-1.png",
-      "assets/images/project/sps-2.png",
-      "assets/images/project/sps-3.png",
-      "assets/images/project/sps-4.png",
-      "assets/images/project/sps-5.png",
-      "assets/images/project/sps-6.png",
-    ],
+    title: "Didi & Friends Playtown",
+    type: "Mobile Game",
+    category: "project",
+    icon: "fa-solid fa-gamepad fa-bounce",
+    logo: "assets/img/project/didiplay.png",
+    date: "2024",
+    description: "Game Tester",
+    screenshots: [],
+    tech: ["Game Testing", "Bug Reporting", "QA"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 4,
-    title: "Cheez n' Cream – Admin Mobile Application",
-    date: "December 2025",
-    type: "Mobile Application (Flutter & Firebase)",
-    category: "mobile",
-    icon: "fa-mobile-alt",
-    description: `Developed a Flutter admin app with real-time Firebase Firestore synchronization for products, orders, customers, and expenses. Implemented secure authentication, live dashboards, PDF report generation, and daily sales summaries. Delivered a modern, animated UI with real-time analytics to support business decision-making.`,
-    tech: ["Flutter", "Firebase", "Firestore", "Dart"],
-    github: "https://github.com/wanai220118/cheez_admin_app",
-    screenshots: [
-      "assets/images/project/cnc-1.png",
-      "assets/images/project/cnc-2.png",
-      "assets/images/project/cnc-3.png",
-      "assets/images/project/cnc-4.png",
-      "assets/images/project/cnc-5.png",
-      "assets/images/project/cnc-6.png",
-    ],
+    title: "Didi & Friends Classroom",
+    type: "Mobile Game",
+    category: "project",
+    icon: "fa-solid fa-gamepad fa-bounce",
+    logo: "assets/img/project/didiclass.jpg",
+    date: "2024",
+    description: "Game Tester",
+    screenshots: [],
+    tech: ["Test Scenario", "Regression Testing", "Mobile QA"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 5,
-    title: "Personal Portfolio Website",
-    date: "November 2025",
-    type: "Web Application",
-    category: "web",
-    icon: "fa-globe",
-    description: `Designed and deployed a responsive portfolio website showcasing projects, skills, certificates, and contact features. Implemented light/dark mode, animations, SEO optimization, interactive modals, and GitHub Pages deployment.`,
-    tech: ["HTML", "CSS", "JavaScript", "GitHub Pages", "SEO"],
-    github: "https://github.com/wanai220118/wanai220118.github.io",
-    screenshots: [
-      "assets/images/project/pf-1.png",
-      "assets/images/project/pf-2.png",
-      "assets/images/project/pf-3.png",
-    ],
+    title: "Johor Calisthenics Community",
+    type: "Website",
+    category: "project",
+    icon: "fa-solid fa-dumbbell fa-bounce",
+    logo: "assets/img/project/jcc.png",
+    date: "2025",
+    description: "Project Coordinator",
+    screenshots: [],
+    tech: ["Project Coordination", "Client Communication", "Website Planning"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 6,
-    title: "GlowGuide – E-Commerce & Consultation Mobile App",
-    date: "October 2024 – June 2025",
-    type: "Mobile & Web Application",
-    category: "mobile",
-    icon: "fa-shopping-bag",
-    description: `Built an Android application (Java) integrating product purchasing and online consultation booking. Developed a Laravel-based admin panel for managing users, products, orders, and bookings. Implemented real-time data synchronization and user-friendly UI to improve customer experience. Demo: https://www.youtube.com/watch?v=BB_3NAu6uUw`,
-    tech: ["Java", "Android Studio", "Laravel", "Firebase", "MySQL"],
-    github: "https://github.com/wanai220118/GlowGuide_MobileApp",
-    screenshots: [
-      "assets/images/project/gg-1.png",
-      "assets/images/project/gg-2.png",
-      "assets/images/project/gg-3.png",
-      "assets/images/project/gg-4.png",
-      "assets/images/project/gg-5.png",
-      "assets/images/project/gg-6.png",
-    ],
-  },
-  {
-    id: 10,
-    title: "Image-Based Detection of Rice Leaf Diseases Using Deep CNN Models",
-    date: "June 2025",
-    type: "Machine Learning",
-    category: "ai",
-    icon: "fa-brain",
-    description: `Implemented deep convolutional neural network (CNN) models to classify and detect rice leaf diseases from image data. Applied image preprocessing, training, and evaluation to develop an automated disease detection system with high accuracy.`,
-    tech: ["Python", "TensorFlow", "CNN", "Image Processing"],
-    github: "https://github.com/wanai220118/Image-Based-Detection-of-Rice-Leaf-Diseases-Using-Deep-CNN-Models",
-    screenshots: ["assets/images/project/rice.png"],
-  },
-  {
-    id: 11,
-    title: "Predicting Diabetes with Classification Algorithm",
-    date: "May 2025",
-    type: "Machine Learning",
-    category: "ai",
-    icon: "fa-heartbeat",
-    description: `Built a predictive model using classification algorithms like Random Forest, Logistic Regression, and K-Nearest Neighbors (KNN) on a diabetes dataset. Applied data preprocessing, feature selection, and model evaluation techniques to improve prediction accuracy.`,
-    tech: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
-    github: "https://github.com/wanai220118/Predicting-Diabetes-with-Classification-Algorithm",
-    screenshots: ["assets/images/project/diabetes.png"],
-  },
-  {
-    id: 12,
-    title: "Evaluating Shortest Path Solutions",
-    date: "April 2025",
-    type: "Algorithm Analysis",
-    category: "data",
-    icon: "fa-route",
-    description: `Analyzed and compared various shortest path algorithms such as Dijkstra's, Breadth First Search and Depth First Search for performance and efficiency. Evaluated algorithmic complexity and accuracy across different graph structures and datasets.`,
-    tech: ["Python", "Algorithms", "Data Structures", "Graph Theory"],
-    github: "https://github.com/wanai220118/Evaluating-Shortest-Path-Solutions-A-Performance-Comparison-of-Dijkstra-BFS-and-DFS-Algorithms",
-    screenshots: [
-      "assets/images/project/bfs.png",
-      "assets/images/project/dfs.png",
-      "assets/images/project/dijkstra.png",
-    ],
-  },
-  {
-    id: 7,
-    title: "FRIENDS_WebApp",
-    date: "January 2025",
-    type: "Full-Stack Web Application",
-    category: "web",
-    icon: "fa-users",
-    description: `Developed a full-stack ASP.NET Core MVC web application with complete CRUD functionality for managing friends, favorite songs, food records, and photo galleries. Implemented secure user authentication and authorization using ASP.NET Identity, ensuring protected access to personal data. Designed a responsive, visually engaging UI with custom themes, gradient backgrounds, toast notifications, and nostalgic branding to enhance usability and user engagement. Demo: https://drive.google.com/file/d/18Czle85TwMlA12vscL_5cU6MsdjK5IO9/view?usp=sharing`,
-    tech: ["ASP.NET Core", "MVC", "C#", "ASP.NET Identity", "Entity Framework"],
-    github: "https://github.com/wanai220118/FRIENDS_WebApp",
-    screenshots: ["assets/images/project/friends.png"],
-  },
-  {
-    id: 13,
-    title: "Analyzing Air Quality And Health Impact In India",
-    date: "January 2025",
-    type: "Data Analytics",
-    category: "data",
-    icon: "fa-wind",
-    description: `Used Power BI and DAX formulas to analyze and visualize air quality data. Applied various analytics methods (descriptive to prescriptive) to assess health implications.`,
-    tech: ["Power BI", "DAX", "Data Analytics", "Visualization"],
-    github: "#",
-    documents: [
-      { label: "View PDF", url: "assets/pdf/g3report_datascience.pdf", icon: "fa-file-pdf" },
-    ],
+    title: "Native Discovery",
+    type: "Website",
+    category: "project",
+    icon: "fa-solid fa-dumbbell fa-bounce",
+    logo: "assets/img/project/native.png",
+    date: "2024",
+    description: "Project Coordinator",
     screenshots: [],
+    tech: ["Project Coordination", "Client Communication", "Website Planning"],
+    liveUrl: "",
+    githubUrl: "",
+  },
+    {
+    id: 7,
+    title: "Tech Medini",
+    type: "Website",
+    category: "project",
+    icon: "fa-solid fa-dumbbell fa-bounce",
+    logo: "assets/img/project/medini.png",
+    date: "2024",
+    description: "Website Tester",
+    screenshots: [],
+    tech: ["Project Coordination", "Client Communication", "Website Planning"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 8,
-    title: "E-KOOP Inventory Web Based System",
-    date: "July 2024",
-    type: "Web Application",
-    category: "web",
-    icon: "fa-warehouse",
-    description: `Developed a database-driven inventory management system to track products, stock levels, suppliers, transactions, and reorder points, improving inventory accuracy and control. Designed and managed a relational database schema, ensuring data integrity, efficient queries, and seamless updates across inventory operations.`,
-    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
-    github: "https://github.com/SerenaNYX/e-koop_system",
-    screenshots: ["assets/images/project/ekoop.png"],
+    title: "Waqaf An-Nur Super App",
+    type: "Web System & Mobile Application",
+    category: "project",
+    icon: "fa-solid fa-dumbbell fa-bounce",
+    logo: "assets/img/project/waqaf.png",
+    date: "2024",
+    description: "System Analyst",
+    screenshots: [],
+    tech: ["Project Coordination", "Client Communication", "Website Planning"],
+    liveUrl: "",
+    githubUrl: "",
   },
   {
     id: 9,
-    title: "Tic-Tac-Toe Game App",
-    date: "June 2024",
-    type: "Desktop Application",
-    category: "web",
-    icon: "fa-gamepad",
-    description: `Built an interactive Tic-Tac-Toe game using Java, implementing complete game logic, win/draw detection, and turn-based controls. Designed GUI components to deliver a smooth and intuitive gameplay experience.`,
-    tech: ["Java", "Swing", "GUI", "Game Development"],
-    github: "https://github.com/wanai220118/Tic-Tac-Toe_Game_Application",
-    screenshots: ["assets/images/project/ttt.png"],
-  },
-  {
-    id: 14,
-    title: "SOHO & Campus Network Design",
-    date: "June 2024",
-    type: "Network Design",
-    category: "network",
-    icon: "fa-network-wired",
-    description: `Designed a secure and efficient network for small offices or home offices, including a guest network for visitors to ensure security and privacy for internal resources. Developed a comprehensive campus-wide network for a college, focusing on scalability, security, and connectivity to support academic, administrative, and guest services across the campus.`,
-    tech: ["Cisco Packet Tracer", "Network Design", "VLAN", "Security"],
-    github: "#",
-    documents: [
-      { label: "View PKT (Campus)", url: "assets/campusnetworkdesignforacollege-part2-group2-28s4-29.pkt", icon: "fa-file-alt" },
-      { label: "View PKT (Project)", url: "assets/projectv8.pkt", icon: "fa-file-alt" },
-      { label: "View PDF", url: "assets/pdf/reportcomputernetworkG1.pdf", icon: "fa-file-pdf" },
-    ],
-    screenshots: [],
-  },
-  {
-    id: 15,
-    title: "Scripting & Server-Client Messaging in Virtual Machine",
-    date: "January 2024",
-    type: "Systems Programming",
-    category: "network",
-    icon: "fa-server",
-    description: `Executed server-client messaging and backup operations in a virtual environment using Kali Linux and Ubuntu. Demonstrated basic scripting and communication protocols within virtual machines.`,
-    tech: ["Linux", "Shell Scripting", "Networking", "Virtual Machines"],
-    github: "#",
-    documents: [
-      { label: "View PDF", url: "assets/pdf/g12reportpdfver.pdf", icon: "fa-file-pdf" },
-    ],
-    screenshots: [],
-  },
-  {
-    id: 16,
-    title: "Depth First Search (Graph: Map Coloring)",
-    date: "December 2023",
-    type: "Algorithm Implementation",
-    category: "data",
-    icon: "fa-map",
-    description: `Utilized Depth First Search (DFS) to traverse and color the regions of a map (represented as a graph) such that no two adjacent regions share the same color. Demonstrated concepts from graph theory, particularly node adjacency and traversal algorithms, to solve the classic map coloring problem effectively.`,
-    tech: ["Python", "Algorithms", "Graph Theory", "DFS"],
-    github: "#",
-    documents: [
-      { label: "View PDF", url: "assets/pdf/DS-G17.pdf", icon: "fa-file-pdf" },
-    ],
-    screenshots: [],
-  },
-  {
-    id: 17,
-    title: "Network Setting In Virtual Machine",
-    date: "October 2023",
-    type: "System Configuration",
-    category: "network",
-    icon: "fa-desktop",
-    description: `Configured a virtual network environment using Oracle VirtualBox and Ubuntu OS. Applied key concepts of OS structure and demonstrated essential skills in virtual machine operations.`,
-    tech: ["VirtualBox", "Ubuntu", "Networking", "System Admin"],
-    github: "#",
-    documents: [
-      { label: "View PDF", url: "assets/pdf/a1_g29.pdf", icon: "fa-file-pdf" },
-    ],
-    screenshots: [],
+    title: "Sistem Kompang Johor",
+    type: "Web System",
+    category: "sme",
+    icon: "fa-solid fa-drum fa-bounce",
+    logo: "assets/img/project/hazim.png",
+    date: "2026",
+    description: "System Analyst, System Developer and System Tester",
+    screenshots: ["assets/img/project/kompangjohor.png"],
+    tech: ["Web Development", "System Testing", "Requirement Analysis"],
+    liveUrl: "https://kompangjohor.com",
+    githubUrl: "",
   },
 ];
 
 // ========== RENDER PROJECTS ==========
-let currentFilter = "all";
+let currentFilter = "project";
 let currentLanguage = localStorage.getItem("portfolioLang") || "bm";
 let taglineRunId = 0;
 
 const i18n = {
   bm: {
-    pageTitle: "Arif Azinuddin | Pembangun Sistem",
-    taglines: ["Pembangun Sistem", "Pembangun Aplikasi Mudah Alih", "Peminat Data"],
-    projectTypeMap: {
-      "E-Commerce Website": "Laman Web E-Dagang",
-      "Mobile Application (React Native)": "Aplikasi Mudah Alih (React Native)",
-      "Web Application": "Aplikasi Web",
-      "Mobile Application (Flutter & Firebase)": "Aplikasi Mudah Alih (Flutter & Firebase)",
-      "Mobile & Web Application": "Aplikasi Mudah Alih & Web",
-      "Machine Learning": "Pembelajaran Mesin",
-      "Algorithm Analysis": "Analisis Algoritma",
-      "Full-Stack Web Application": "Aplikasi Web Full-Stack",
-      "Data Analytics": "Analitik Data",
-      "Desktop Application": "Aplikasi Desktop",
-      "Network Design": "Reka Bentuk Rangkaian",
-      "Systems Programming": "Pengaturcaraan Sistem",
-      "Algorithm Implementation": "Pelaksanaan Algoritma",
-      "System Configuration": "Konfigurasi Sistem",
-    },
-    documentLabelMap: {
-      "View PDF": "Lihat PDF",
-      "View PKT (Campus)": "Lihat PKT (Kampus)",
-      "View PKT (Project)": "Lihat PKT (Projek)",
-    },
+    pageTitle: "Arif Azinuddin | Penganalisis Sistem",
+    taglines: ["Penganalisis Sistem", "Pengurus Projek", "Penyelaras Projek", "Penguji Sistem", "Pembangun Sistem SME"],
     ui: {
       navHome: "Utama",
-      navAbout: "Tentang",
       navExperience: "Pengalaman",
-      navSkills: "Kemahiran",
+      navTools: "Alat",
       navProjects: "Projek",
       navReferences: "Rujukan",
-      resume: "Resume",
+      navFightMe: "Lawan Saya",
       heroDesc:
-        "Bersemangat dalam membina penyelesaian digital yang berfungsi dan berfokuskan pengguna, dengan pengalaman merentas projek web, mudah alih, dan berasaskan data. Saya menghubungkan inovasi teknikal dengan pengalaman pengguna yang cemerlang.",
+        "Bersemangat dalam membangunkan penyelesaian digital yang praktikal dan berfokus kepada pengguna dengan pengalaman sebagai Penganalisis Sistem. Saya menghubungkan keperluan sistem dengan pelaksanaan teknikal sambil menyokong pasukan untuk merealisasikan hasil akhir sistem.",
       getInTouch: "Hubungi Saya",
       viewProjects: "Lihat Projek",
-      aboutTitle: "Tentang Saya",
-      aboutSubtitle: "Pembangun sistem berdedikasi yang bersemangat menyelesaikan masalah dunia sebenar",
-      aboutP1:
-        "Hai, saya Arif Azinuddin, seorang pembangun sistem berdedikasi dengan pengalaman menyeluruh dalam pembangunan web dan aplikasi mudah alih full-stack. Saya gemar menyelesaikan masalah dunia sebenar melalui kod yang kemas, cekap, dan reka bentuk intuitif.",
-      aboutP2:
-        "Kepakaran saya merangkumi pelbagai bahasa pengaturcaraan dan rangka kerja, membolehkan saya membina penyelesaian berskala yang mengutamakan fungsi serta pengalaman pengguna. Saya sentiasa belajar dan menyesuaikan diri dengan teknologi baharu untuk menghasilkan penyelesaian terkini.",
-      statLanguages: "Bahasa",
-      statProjects: "Projek",
-      statCertificates: "Sijil",
       expTitle: "Pengalaman & Pendidikan",
-      expSubtitle: "Perjalanan profesional dan latar belakang akademik saya",
+      expSubtitle: "Perjalanan kerjaya dan latar belakang akademik saya",
       tabWork: "Pengalaman Kerja",
       tabEducation: "Pendidikan",
       tabCertificates: "Sijil",
-      skillsTitle: "Kemahiran Teknikal",
-      skillsSubtitle: "Set kemahiran menyeluruh untuk membina aplikasi moden",
+      toolsTitle: "Alat Teknikal",
+      toolsSubtitle: "Set alatan menyeluruh untuk membina aplikasi moden",
       skillLanguages: "Bahasa Pengaturcaraan",
-      skillFrameworks: "Rangka Kerja",
+      skillManagement: "Pengurusan Projek",
       skillTools: "Alat & Teknologi",
       skillIdes: "IDE & Platform",
       skillSoft: "Kemahiran Insaniah",
@@ -353,7 +167,7 @@ const i18n = {
       softLeadership: "Kepimpinan",
       softAdaptability: "Kebolehsuaian",
       projectsTitle: "Projek Pilihan",
-      projectsSubtitle: "Sorotan kerja dan pencapaian terkini saya",
+      projectsSubtitle: "Senarai kerja saya",
       filterAll: "Semua Projek",
       filterWeb: "Web",
       filterMobile: "Mudah Alih",
@@ -364,7 +178,18 @@ const i18n = {
       referencesTitle: "Rujukan",
       referencesSubtitle: "Rujukan profesional yang boleh memberi maklum balas tentang kerja dan peribadi saya",
       professionalReferences: "Rujukan Profesional",
-      contactInformation: "Maklumat Hubungan",
+      contactInformation: "Tandatangan Digital",
+      signatureIntro: "Lukis apa sahaja, tambah nama dan mesej, kemudian eksport sebagai kenangan.",
+      signatureNamePlaceholder: "Nama anda",
+      signatureEmailPlaceholder: "E-mel anda (pilihan)",
+      signatureMessagePlaceholder: "Tulis mesej anda di sini",
+      signatureHint: "Gunakan tetikus atau sentuhan untuk melukis bebas di kanvas.",
+      signatureClear: "Padam",
+      signatureSend: "Eksport",
+      signatureNeedInput: "Sila tulis mesej atau lukis tandatangan dahulu.",
+      signatureSending: "Menghantar mesej...",
+      signatureSuccess: "Terima kasih. Mesej dan tandatangan anda telah dihantar.",
+      signatureError: "Tidak berjaya dihantar. Sila cuba lagi.",
       referenceNote1: "Beliau merupakan penyelia latihan industri saya.",
       referenceNote2: "Beliau merupakan penyelia projek tahun akhir saya, bertajuk GlowGuide Mobile Application.",
       referenceNote3: "Beliau merupakan penyelia akademik saya sepanjang pengajian ijazah.",
@@ -375,42 +200,32 @@ const i18n = {
     },
   },
   en: {
-    pageTitle: "Arif Azinuddin | System Developer",
-    taglines: ["System Developer", "Mobile App Builder", "Data Enthusiast"],
+    pageTitle: "Arif Azinuddin | System Analyst",
+    taglines: ["System Analyst", "Project Manager", "Project Coordinator", "System Tester", "SME System Developer"],
     projectTypeMap: {},
     documentLabelMap: {},
     ui: {
       navHome: "Home",
-      navAbout: "About",
       navExperience: "Experience",
-      navSkills: "Skills",
+      navTools: "Tools",
       navProjects: "Projects",
       navReferences: "References",
-      resume: "Resume",
+      navFightMe: "Fight Me",
       heroDesc:
-        "Passionate about creating functional, user-centered digital solutions with experience across web, mobile, and data-driven projects. I bridge technical innovation and exceptional user experience.",
+        "Passionate about building practical, user-centered digital solutions with experience as a System Analyst. I bridge business needs with technical implementation while supporting teams to deliver reliable and meaningful systems.",
       getInTouch: "Get In Touch",
       viewProjects: "View Projects",
-      aboutTitle: "About Me",
-      aboutSubtitle: "Dedicated system developer with a passion for solving real-world problems",
-      aboutP1:
-        "Hi, I'm Arif Azinuddin, a dedicated system developer with comprehensive experience in full-stack web and mobile development. I thrive on solving real-world problems through clean, efficient code and intuitive design.",
-      aboutP2:
-        "My expertise spans across multiple programming languages and frameworks, allowing me to build scalable solutions that prioritize both functionality and user experience. I'm constantly learning and adapting to new technologies to deliver cutting-edge solutions.",
-      statLanguages: "Languages",
-      statProjects: "Projects",
-      statCertificates: "Certificates",
       expTitle: "Experience & Education",
-      expSubtitle: "My professional journey and academic background",
+      expSubtitle: "My career journey and academic background",
       tabWork: "Work Experience",
       tabEducation: "Education",
       tabCertificates: "Certificates",
-      skillsTitle: "Technical Skills",
-      skillsSubtitle: "A comprehensive toolkit for building modern applications",
+      toolsTitle: "Technical Tools",
+      toolsSubtitle: "A comprehensive toolkit for building modern applications",
       skillLanguages: "Languages",
-      skillFrameworks: "Frameworks",
+      skillManagement: "Project Management",
       skillTools: "Tools & Technologies",
-      skillIdes: "IDEs & Platforms",
+      skillIdes: "Integrated Development Environment",
       skillSoft: "Soft Skills",
       softCommunication: "Communication",
       softTeamwork: "Teamwork",
@@ -418,7 +233,7 @@ const i18n = {
       softLeadership: "Leadership",
       softAdaptability: "Adaptability",
       projectsTitle: "Featured Projects",
-      projectsSubtitle: "A showcase of my recent work and achievements",
+      projectsSubtitle: "A list of my recent work",
       filterAll: "All Projects",
       filterWeb: "Web",
       filterMobile: "Mobile",
@@ -429,10 +244,21 @@ const i18n = {
       referencesTitle: "References",
       referencesSubtitle: "Professional references who can speak to my work and character",
       professionalReferences: "Professional References",
-      contactInformation: "Contact Information",
-      referenceNote1: "He was my industrial training supervisor.",
-      referenceNote2: "He was the supervisor for my final year project, titled GlowGuide Mobile Application.",
-      referenceNote3: "He was my academic supervisor throughout my degree program.",
+      contactInformation: "Drawing Space",
+      signatureIntro: "Draw anything, add your name and message, then export it as a keepsake.",
+      signatureNamePlaceholder: "Your name",
+      signatureEmailPlaceholder: "Your email (optional)",
+      signatureMessagePlaceholder: "Write your message here",
+      signatureHint: "Use mouse or touch to draw freely on the canvas.",
+      signatureClear: "Clear",
+      signatureSend: "Export",
+      signatureNeedInput: "Please write a message or draw a signature first.",
+      signatureSending: "Sending message...",
+      signatureSuccess: "Thanks. Your message and signature were sent.",
+      signatureError: "Failed to send. Please try again.",
+      referenceNote1: "Academic Advisor",
+      referenceNote2: "FYP Supervisor",
+      referenceNote3: "Faculty Supervisor During Internship",
       contactEmail: "Email",
       footerRights: "All rights reserved.",
       liveView: "Live view",
@@ -447,12 +273,12 @@ function getUIText(key) {
 
 function translateProjectType(type) {
   if (currentLanguage === "en") return type;
-  return i18n.bm.projectTypeMap[type] || type;
+  return i18n.bm.projectTypeMap?.[type] || type;
 }
 
 function translateDocumentLabel(label) {
   if (currentLanguage === "en") return label;
-  return i18n.bm.documentLabelMap[label] || label;
+  return i18n.bm.documentLabelMap?.[label] || label;
 }
 
 function setText(selector, value) {
@@ -473,69 +299,58 @@ function applyLanguage(lang = "bm") {
   document.title = i18n[currentLanguage].pageTitle;
   localStorage.setItem("portfolioLang", currentLanguage);
 
-  setText(".nav-links li:nth-child(1) a", t.navHome);
-  setText(".nav-links li:nth-child(2) a", t.navAbout);
-  setText(".nav-links li:nth-child(3) a", t.navExperience);
-  setText(".nav-links li:nth-child(4) a", t.navSkills);
-  setText(".nav-links li:nth-child(5) a", t.navProjects);
-  setText(".nav-links li:nth-child(6) a", t.navReferences);
-  setHtml(".nav-links li:nth-child(7) a", '<i class="fas fa-download"></i> ' + t.resume);
+  setText('.nav-links a[href="#home"]', t.navHome);
+  setText('.nav-links a[href="#experience"]', t.navExperience);
+  setText('.nav-links a[href="#tools"]', t.navTools);
+  setText('.nav-links a[href="#projects"]', t.navProjects);
+  setText('.nav-links a[href="#contact"]', t.navReferences);
+  setHtml("#openTicTacToe", '<i class="fas fa-gamepad"></i> ' + t.navFightMe);
 
   setText(".hero-description", t.heroDesc);
   setHtml(".hero-buttons .btn-primary", '<i class="fas fa-envelope"></i> ' + t.getInTouch);
   setHtml(".hero-buttons .btn-secondary", '<i class="fas fa-briefcase"></i> ' + t.viewProjects);
 
-  setText("#about .section-header h2", t.aboutTitle);
-  setText("#about .section-header p", t.aboutSubtitle);
-  setText("#about .about-text p:nth-child(1)", t.aboutP1);
-  setText("#about .about-text p:nth-child(2)", t.aboutP2);
-  setText("#about .stat-card:nth-child(1) p", t.statLanguages);
-  setText("#about .stat-card:nth-child(2) p", t.statProjects);
-  setText("#about .stat-card:nth-child(3) p", t.statCertificates);
-
   setText("#experience .section-header h2", t.expTitle);
   setText("#experience .section-header p", t.expSubtitle);
-  setHtml('.tab-btn[data-tab="work"]', '<i class="fas fa-briefcase"></i> ' + t.tabWork);
-  setHtml('.tab-btn[data-tab="education"]', '<i class="fas fa-graduation-cap"></i> ' + t.tabEducation);
-  setHtml('.tab-btn[data-tab="certificates"]', '<i class="fas fa-certificate"></i> ' + t.tabCertificates);
 
-  setText("#skills .section-header h2", t.skillsTitle);
-  setText("#skills .section-header p", t.skillsSubtitle);
-  setText("#skills .skill-card:nth-child(1) h3", t.skillLanguages);
-  setText("#skills .skill-card:nth-child(2) h3", t.skillFrameworks);
-  setText("#skills .skill-card:nth-child(3) h3", t.skillTools);
-  setText("#skills .skill-card:nth-child(4) h3", t.skillIdes);
-  setText("#skills .skill-card:nth-child(5) h3", t.skillSoft);
-  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(1)", t.softCommunication);
-  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(2)", t.softTeamwork);
-  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(3)", t.softProblemSolving);
-  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(4)", t.softLeadership);
-  setText("#skills .skill-card:nth-child(5) .skill-tag:nth-child(5)", t.softAdaptability);
-
-  setText("#projects .section-header h2", t.projectsTitle);
-  setText("#projects .section-header p", t.projectsSubtitle);
-  setHtml('.filter-btn[data-filter="all"]', '<i class="fas fa-th"></i> ' + t.filterAll);
-  setHtml('.filter-btn[data-filter="web"]', '<i class="fas fa-globe"></i> ' + t.filterWeb);
-  setHtml('.filter-btn[data-filter="mobile"]', '<i class="fas fa-mobile-alt"></i> ' + t.filterMobile);
-  setHtml('.filter-btn[data-filter="ai"]', '<i class="fas fa-brain"></i> ' + t.filterAI);
-  setHtml('.filter-btn[data-filter="data"]', '<i class="fas fa-chart-bar"></i> ' + t.filterData);
-  setHtml('.filter-btn[data-filter="network"]', '<i class="fas fa-network-wired"></i> ' + t.filterNetwork);
-  setHtml('.filter-btn[data-filter="design"]', '<i class="fas fa-pen-nib"></i> ' + t.filterDesign);
+  setText("#tools .section-header h2", t.toolsTitle);
+  setText("#tools .section-header p", t.toolsSubtitle);
+  setText("#tools .skill-card:nth-child(1) h3", t.skillManagement);
+  setText("#tools .skill-card:nth-child(2) h3", t.skillTools);
+  setText("#tools .skill-card:nth-child(3) h3", t.skillLanguages);
+  setText("#tools .skill-card:nth-child(4) h3", t.skillIdes);
+  setText("#tools .skill-card:nth-child(5) h3", t.skillSoft);
+  setText("#tools .skill-card:nth-child(5) .skill-tag:nth-child(1)", t.softProblemSolving);
 
   setText("#contact .section-header h2", t.referencesTitle);
   setText("#contact .section-header p", t.referencesSubtitle);
   setHtml("#contact .contact-form-wrapper h3", '<i class="fas fa-address-book"></i> ' + t.professionalReferences);
-  setHtml("#contact .contact-info-wrapper h3", '<i class="fas fa-address-card"></i> ' + t.contactInformation);
+  setHtml("#contact .contact-info-wrapper h3", '<i class="fas fa-signature"></i> ' + t.contactInformation);
+  setText("#signatureIntro", t.signatureIntro);
+  setText("#signatureHint", t.signatureHint);
+  setHtml("#clearSignature", '<i class="fas fa-eraser"></i> ' + t.signatureClear);
   setHtml(
-    "#contact .reference-card:nth-child(1) .reference-note",
+    "#signatureExportImage",
+    `<i class="fas fa-image"></i> ${currentLanguage === "bm" ? "Eksport PNG" : "Export PNG"}`
+  );
+  setHtml(
+    "#signatureExportPdf",
+    `<i class="fas fa-file-pdf"></i> ${currentLanguage === "bm" ? "Eksport PDF" : "Export PDF"}`
+  );
+  const signatureNameInput = document.getElementById("signatureName");
+  if (signatureNameInput) signatureNameInput.placeholder = t.signatureNamePlaceholder;
+  const signatureMessageInput = document.getElementById("signatureMessage");
+  if (signatureMessageInput) signatureMessageInput.placeholder = t.signatureMessagePlaceholder;
+  setHtml(
+    "#referenceNoteAcademic1",
     '<i class="fas fa-info-circle"></i> ' + t.referenceNote1
   );
   setHtml(
-    "#contact .reference-card:nth-child(2) .reference-note",
+    "#referenceNoteAcademic2",
     '<i class="fas fa-info-circle"></i> ' + t.referenceNote2
   );
   setHtml(
-    "#contact .reference-card:nth-child(3) .reference-note",
+    "#referenceNoteAcademic3",
     '<i class="fas fa-info-circle"></i> ' + t.referenceNote3
   );
   setText("#contact .contact-info-card:nth-child(1) h4", t.contactEmail);
@@ -544,7 +359,7 @@ function applyLanguage(lang = "bm") {
   const yearEl = document.getElementById("copyrightYear");
   const yearText = yearEl ? yearEl.textContent : "2025";
   if (footer) {
-    footer.innerHTML = `&copy; <span id="copyrightYear">${yearText}</span> Arif Azinuddin. ${t.footerRights}`;
+    footer.innerHTML = `<span id="copyrightYear">${yearText}</span> Arif Azinuddin. ${t.footerRights}`;
   }
 
   const langToggle = document.getElementById("langToggle");
@@ -571,33 +386,112 @@ function renderProjects(filter = "all") {
   filteredProjects.forEach((project) => {
     const projectCard = document.createElement("div");
     projectCard.className = "project-card";
-    projectCard.onclick = () => openProjectModal(project.id);
 
     const thumbnailHtml =
-      project.screenshots.length > 0
+      Array.isArray(project.screenshots) && project.screenshots.length > 0
         ? `<img src="${project.screenshots[0]}" alt="${project.title}" class="project-thumbnail">`
-        : `<div class="project-thumbnail project-thumbnail--empty" aria-hidden="true"><i class="fas ${project.icon}"></i></div>`;
+        : "";
+    const headerLogoHtml = project.logo
+      ? `<img src="${project.logo}" alt="${project.title} logo" class="project-header-logo">`
+      : "";
+    const shortDescription =
+      project.description.length > 120
+        ? `${project.description.substring(0, 120)}...`
+        : project.description;
+    const isSmeProject = project.category === "sme";
+    const hasSmeLink = isSmeProject && !!project.liveUrl;
+    const titleHtml = hasSmeLink
+      ? `<h3><a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-title-link">${project.title}</a></h3>`
+      : `<h3>${project.title}</h3>`;
+    const smeLinkHtml = hasSmeLink
+      ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-sme-link"><i class="fas fa-up-right-from-square"></i> ${getUIText("liveView")}</a>`
+      : "";
+
     projectCard.innerHTML = `
             <div class="project-header">
-                <i class="fas ${project.icon}"></i>
-                <h3>${project.title}</h3>
+                ${headerLogoHtml}
+                ${titleHtml}
             </div>
             <div class="project-body">
                 ${thumbnailHtml}
-                <p>${project.description.substring(0, 120)}...</p>
+                <p>${shortDescription}</p>
                 <div class="project-date">
-                    <i class="far fa-calendar"></i>
+                    <i class="fa-solid fa-route"></i>
                     <span>${project.date}</span>
                 </div>
                 <div class="project-type">
-                    <i class="fas fa-tag"></i>
+                    <i class="fa-solid fa-computer"></i>
                     <span>${translateProjectType(project.type)}</span>
                 </div>
+                ${smeLinkHtml}
             </div>
         `;
 
     projectsGrid.appendChild(projectCard);
   });
+}
+
+function openProjectModal(projectId) {
+  const project = projects.find((item) => item.id === projectId);
+  if (!project) return;
+
+  const projectModal = document.getElementById("projectModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalDate = document.getElementById("modalDate");
+  const modalType = document.getElementById("modalType");
+  const modalScreenshots = document.getElementById("modalScreenshots");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalTech = document.getElementById("modalTech");
+  const modalLinks = document.getElementById("modalLinks");
+  if (
+    !projectModal ||
+    !modalTitle ||
+    !modalDate ||
+    !modalType ||
+    !modalScreenshots ||
+    !modalDescription ||
+    !modalTech ||
+    !modalLinks
+  ) {
+    return;
+  }
+
+  modalTitle.textContent = project.title;
+  modalDate.innerHTML = `<i class="fa-solid fa-route"></i> ${project.date || "-"}`;
+  modalType.innerHTML = `<i class="fa-solid fa-computer"></i> ${translateProjectType(project.type || "-")}`;
+  modalDescription.textContent = project.description || "";
+
+  if (Array.isArray(project.screenshots) && project.screenshots.length > 0) {
+    modalScreenshots.innerHTML = project.screenshots
+      .map((src) => `<img src="${src}" alt="${project.title}" class="modal-screenshot">`)
+      .join("");
+  } else {
+    modalScreenshots.innerHTML = `<div class="project-thumbnail project-thumbnail--empty" aria-hidden="true"><i class="fas ${project.icon}"></i></div>`;
+  }
+
+  if (Array.isArray(project.tech) && project.tech.length > 0) {
+    modalTech.innerHTML = project.tech
+      .map((item) => `<span class="skill-tag">${item}</span>`)
+      .join("");
+  } else {
+    modalTech.innerHTML = "";
+  }
+
+  const links = [];
+  if (project.liveUrl) {
+    links.push(
+      `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="modal-btn"><i class="fas fa-up-right-from-square"></i> ${getUIText("liveView")}</a>`
+    );
+  }
+  if (project.githubUrl) {
+    links.push(
+      `<a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="modal-btn"><i class="fab fa-github"></i> ${getUIText("viewOnGithub")}</a>`
+    );
+  }
+  modalLinks.innerHTML = links.join("");
+
+  projectModal.style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 // ========== PROJECT FILTERS ==========
@@ -613,153 +507,1648 @@ filterBtns.forEach((btn) => {
   });
 });
 
-// ========== PROJECT MODAL ==========
-function openProjectModal(projectId) {
-  const project = projects.find((p) => p.id === projectId);
-  if (!project) return;
+// ========== FIGHT ME GAMES ==========
+const tictactoeOpenBtn = document.getElementById("openTicTacToe");
+const tictactoeModal = document.getElementById("ticTacToeModal");
+const fightMeTitleEl = document.getElementById("fightMeTitle");
+const fightMePrevBtn = document.getElementById("fightMePrevGame");
+const fightMeNextBtn = document.getElementById("fightMeNextGame");
+const gamePanelTicTacToe = document.getElementById("gamePanelTicTacToe");
+const gamePanelFleabag = document.getElementById("gamePanelFleabag");
+const gamePanelDamHaji = document.getElementById("gamePanelDamHaji");
 
-  document.getElementById("modalTitle").textContent = project.title;
-  document.getElementById(
-    "modalDate"
-  ).innerHTML = `<i class="far fa-calendar"></i> ${project.date}`;
-  document.getElementById(
-    "modalType"
-  ).innerHTML = `<i class="fas fa-tag"></i> ${translateProjectType(project.type)}`;
-  document.getElementById("modalDescription").textContent = project.description;
+const tictactoeBoardEl = document.getElementById("tictactoeBoard");
+const tictactoeStatusEl = document.getElementById("tictactoeStatus");
+const tictactoeRestartBtn = document.getElementById("tictactoeRestart");
+const tictactoeWinLineEl = document.getElementById("tictactoeWinLine");
+const tttUserScoreEl = document.getElementById("tttUserScore");
+const tttBotScoreEl = document.getElementById("tttBotScore");
 
-  const linksContainer = document.getElementById("modalLinks");
-  linksContainer.innerHTML = "";
-  if (project.documents && project.documents.length > 0) {
-    project.documents.forEach((doc) => {
-      const a = document.createElement("a");
-      a.href = doc.url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.className = "modal-btn";
-      a.innerHTML = `<i class="fas ${doc.icon}"></i> ${translateDocumentLabel(doc.label)}`;
-      linksContainer.appendChild(a);
-    });
-  }
-  if (project.liveUrl) {
-    const liveLink = document.createElement("a");
-    liveLink.href = project.liveUrl;
-    liveLink.target = "_blank";
-    liveLink.rel = "noopener noreferrer";
-    liveLink.className = "modal-btn modal-btn-live";
-    liveLink.innerHTML = `<i class="fas fa-external-link-alt"></i> ${getUIText("liveView")}`;
-    linksContainer.appendChild(liveLink);
-  }
-  if (project.github && project.github !== "#") {
-    const githubLink = document.createElement("a");
-    githubLink.href = project.github;
-    githubLink.target = "_blank";
-    githubLink.rel = "noopener noreferrer";
-    githubLink.className = "modal-btn";
-    githubLink.innerHTML = `<i class="fab fa-github"></i> ${getUIText("viewOnGithub")}`;
-    linksContainer.appendChild(githubLink);
-  }
+const fleabagCanvas = document.getElementById("fleabagCanvas");
+const fleabagStatusEl = document.getElementById("fleabagStatus");
+const fleabagWindIndicatorEl = document.getElementById("fleabagWindIndicator");
+const fleabagFleabagHpEl = document.getElementById("fleabagFleabagHp");
+const fleabagMuttHpEl = document.getElementById("fleabagMuttHp");
+const fleabagFleabagHpBarEl = document.getElementById("fleabagFleabagHpBar");
+const fleabagMuttHpBarEl = document.getElementById("fleabagMuttHpBar");
+const fleabagChargeFillEl = document.getElementById("fleabagChargeFill");
+const fleabagThrowHintEl = document.getElementById("fleabagThrowHint");
+const fleabagFinishFlagEl = document.getElementById("fleabagFinishFlag");
+const fleabagBotUsageEl = document.getElementById("fleabagBotUsage");
+const fleabagThrowBtn = document.getElementById("fleabagThrowBtn");
+const fleabagRestartBtn = document.getElementById("fleabagRestart");
+const fleabagPowerOptions = document.getElementById("fleabagPowerOptions");
+const fleabagUserScoreEl = document.getElementById("fleabagUserScore");
+const fleabagBotScoreEl = document.getElementById("fleabagBotScore");
+const damhajiBoardEl = document.getElementById("damhajiBoard");
+const damhajiStatusEl = document.getElementById("damhajiStatus");
+const damhajiRestartBtn = document.getElementById("damhajiRestart");
+const damhajiUserScoreEl = document.getElementById("damhajiUserScore");
+const damhajiBotScoreEl = document.getElementById("damhajiBotScore");
 
-  const screenshotsDiv = document.getElementById("modalScreenshots");
-  screenshotsDiv.innerHTML = "";
-  screenshotsDiv.style.display = project.screenshots.length > 0 ? "" : "none";
-  project.screenshots.forEach((screenshot) => {
-    const img = document.createElement("img");
-    img.src = screenshot;
-    img.alt = project.title;
-    screenshotsDiv.appendChild(img);
+const fightMeGames = [
+  {
+    id: "tictactoe",
+    titleHtml: '<i class="fas fa-robot"></i> Tic Tac Toe vs Arif Azinuddin',
+    panelEl: gamePanelTicTacToe,
+  },
+  {
+    id: "fleabag",
+    titleHtml: '<i class="fas fa-dog"></i> Fleabag vs Arif Azinuddin (Mutt)',
+    panelEl: gamePanelFleabag,
+  },
+  {
+    id: "damhaji",
+    titleHtml: '<i class="fas fa-chess-board"></i> Dam Haji vs Arif Azinuddin',
+    panelEl: gamePanelDamHaji,
+  },
+];
+
+let activeFightMeGameIndex = 0;
+let tttUserScore = 0;
+let tttBotScore = 0;
+let fleabagUserScore = 0;
+let fleabagBotScore = 0;
+let damhajiUserScore = 0;
+let damhajiBotScore = 0;
+
+function tttUpdateScoreboard() {
+  if (tttUserScoreEl) tttUserScoreEl.textContent = String(tttUserScore);
+  if (tttBotScoreEl) tttBotScoreEl.textContent = String(tttBotScore);
+}
+
+function fleabagUpdateScoreboard() {
+  if (fleabagUserScoreEl) fleabagUserScoreEl.textContent = String(fleabagUserScore);
+  if (fleabagBotScoreEl) fleabagBotScoreEl.textContent = String(fleabagBotScore);
+}
+
+function setFightMeActiveGame(index) {
+  if (!fightMeGames.length) return;
+  activeFightMeGameIndex = ((index % fightMeGames.length) + fightMeGames.length) % fightMeGames.length;
+
+  fightMeGames.forEach((game, idx) => {
+    if (!game.panelEl) return;
+    game.panelEl.classList.toggle("is-hidden", idx !== activeFightMeGameIndex);
   });
 
-  const techDiv = document.getElementById("modalTech");
-  techDiv.innerHTML = "";
-  project.tech.forEach((tech) => {
-    const span = document.createElement("span");
-    span.textContent = tech;
-    techDiv.appendChild(span);
+  const activeGame = fightMeGames[activeFightMeGameIndex];
+  if (fightMeTitleEl) fightMeTitleEl.innerHTML = activeGame.titleHtml;
+}
+
+function goToNextFightMeGame() {
+  setFightMeActiveGame(activeFightMeGameIndex + 1);
+}
+
+function goToPrevFightMeGame() {
+  setFightMeActiveGame(activeFightMeGameIndex - 1);
+}
+
+const tttHuman = "X";
+const tttBot = "O";
+const tttWinLines = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+
+let tttBoard = Array(9).fill("");
+let tttGameOver = false;
+let tttBotThinking = false;
+
+function tttSetStatus(text) {
+  if (tictactoeStatusEl) tictactoeStatusEl.textContent = text;
+}
+
+function tttRenderBoard() {
+  if (!tictactoeBoardEl) return;
+  const cells = tictactoeBoardEl.querySelectorAll(".tictactoe-cell");
+  cells.forEach((cell, idx) => {
+    const value = tttBoard[idx];
+    cell.textContent = value;
+    cell.disabled = !!value || tttGameOver || tttBotThinking;
+    cell.classList.toggle("is-human", value === tttHuman);
+    cell.classList.toggle("is-bot", value === tttBot);
   });
-
-  document.getElementById("projectModal").style.display = "block";
-  document.body.style.overflow = "hidden";
 }
 
-// ========== CERTIFICATE MODAL ==========
-function viewCertificate(certId) {
-  const index = parseInt(certId.replace("cert", ""), 10) - 1;
-  if (index < 0 || index >= certificateImages.length) return;
-  const certImage = certificateImages[index];
-  const imgEl = document.getElementById("certFullImage");
-  const modalEl = document.getElementById("certificateModal");
-  if (!imgEl || !modalEl) return;
-  imgEl.src = certImage;
-  imgEl.alt = "Certificate";
-  modalEl.style.display = "block";
-  document.body.style.overflow = "hidden";
+function tttGetWinningLine(board, symbol) {
+  return tttWinLines.find((line) => line.every((idx) => board[idx] === symbol)) || null;
 }
 
-function viewCertificateByPath(imageSrc) {
-  document.getElementById("certFullImage").src = imageSrc;
-  document.getElementById("certFullImage").alt = "Certificate";
-  document.getElementById("certificateModal").style.display = "block";
-  document.body.style.overflow = "hidden";
+function tttGetGameState(board) {
+  if (tttGetWinningLine(board, tttBot)) return "bot";
+  if (tttGetWinningLine(board, tttHuman)) return "human";
+  if (!board.includes("")) return "draw";
+  return "ongoing";
 }
 
-// ========== RHB PHOTO GALLERY ==========
-const rhbGalleries = {
-  "rhb-mentor": {
-    title: "RHB X-CEL Star Mentoring Programme FY2023: Midpoint Check-in",
-    images: [
-      "assets/images/rhb/mentor/IMG-20230722-WA0020.jpg",
-      "assets/images/rhb/mentor/IMG_20230721_112440.jpg",
-      "assets/images/rhb/mentor/IMG-20230722-WA0021.jpg",
-      "assets/images/rhb/mentor/IMG-20230722-WA0025.jpg",
-      "assets/images/rhb/mentor/IMG_20230721_133445.jpg",
-    ],
-  },
-  "rhb-award": {
-    title: "Majlis Anugerah Biasiswa RHB X-Cel Star",
-    images: [
-      "assets/images/rhb/award/KAL_9318.JPG",
-      "assets/images/rhb/award/KAL_9413.JPG",
-      "assets/images/rhb/award/KAL_9321.JPG",
-      "assets/images/rhb/award/IMG_20230222_152104.jpg",
-      "assets/images/rhb/award/IMG_20230222_164618.jpg",
-    ],
-  },
-  "rhb-english": {
-    title: "RHB X-Cel Star English Communications & Confidence Training",
-    images: [
-      "assets/images/rhb/english-training/DIN_6356.JPG",
-      "assets/images/rhb/english-training/DIN_6054.JPG",
-      "assets/images/rhb/english-training/DIN_6153.JPG",
-      "assets/images/rhb/english-training/DIN_6163.JPG",
-      "assets/images/rhb/english-training/DIN_6258.JPG",
-      "assets/images/rhb/english-training/DIN_6337.JPG",
-      "assets/images/rhb/english-training/selfi.jpg",
-    ],
-  },
+function tttDrawWinLine(winLine) {
+  if (!tictactoeBoardEl || !tictactoeWinLineEl || !winLine) return;
+
+  const cells = [...tictactoeBoardEl.querySelectorAll(".tictactoe-cell")];
+  const firstCell = cells[winLine[0]];
+  const lastCell = cells[winLine[2]];
+  if (!firstCell || !lastCell) return;
+
+  const boardRect = tictactoeBoardEl.getBoundingClientRect();
+  const firstRect = firstCell.getBoundingClientRect();
+  const lastRect = lastCell.getBoundingClientRect();
+
+  const x1 = firstRect.left - boardRect.left + firstRect.width / 2;
+  const y1 = firstRect.top - boardRect.top + firstRect.height / 2;
+  const x2 = lastRect.left - boardRect.left + lastRect.width / 2;
+  const y2 = lastRect.top - boardRect.top + lastRect.height / 2;
+
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const distance = Math.hypot(dx, dy);
+  const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
+
+  tictactoeWinLineEl.style.left = `${x1}px`;
+  tictactoeWinLineEl.style.top = `${y1}px`;
+  tictactoeWinLineEl.style.transform = `rotate(${angle}deg)`;
+  tictactoeWinLineEl.style.width = `${distance}px`;
+  tictactoeWinLineEl.classList.add("visible");
+}
+
+function tttHideWinLine() {
+  if (!tictactoeWinLineEl) return;
+  tictactoeWinLineEl.classList.remove("visible");
+  tictactoeWinLineEl.style.width = "0";
+}
+
+function tttGetAvailableMoves(board) {
+  const moves = [];
+  for (let i = 0; i < board.length; i++) {
+    if (board[i] === "") moves.push(i);
+  }
+  return moves;
+}
+
+function tttMinimax(board, isBotTurn) {
+  const state = tttGetGameState(board);
+  if (state === "bot") return { score: 10 };
+  if (state === "human") return { score: -10 };
+  if (state === "draw") return { score: 0 };
+
+  const moves = tttGetAvailableMoves(board);
+  let bestMove = -1;
+  let bestScore = isBotTurn ? -Infinity : Infinity;
+
+  for (const move of moves) {
+    board[move] = isBotTurn ? tttBot : tttHuman;
+    const result = tttMinimax(board, !isBotTurn);
+    board[move] = "";
+
+    if (isBotTurn) {
+      if (result.score > bestScore) {
+        bestScore = result.score;
+        bestMove = move;
+      }
+    } else if (result.score < bestScore) {
+      bestScore = result.score;
+      bestMove = move;
+    }
+  }
+
+  return { move: bestMove, score: bestScore };
+}
+
+function tttFindBestBotMove() {
+  // Small opening preference for faster response before full minimax.
+  if (tttBoard.every((c) => c === "") && tttBoard[4] === "") return 4;
+  return tttMinimax([...tttBoard], true).move;
+}
+
+function tttFinishGame(result) {
+  tttGameOver = true;
+  if (result === "bot") {
+    tttBotScore += 1;
+    tttUpdateScoreboard();
+    tttSetStatus("Arif Azinuddin (O) wins.");
+    tttDrawWinLine(tttGetWinningLine(tttBoard, tttBot));
+  } else if (result === "human") {
+    tttUserScore += 1;
+    tttUpdateScoreboard();
+    tttSetStatus("You win. Great move.");
+    tttDrawWinLine(tttGetWinningLine(tttBoard, tttHuman));
+  } else {
+    tttSetStatus("Draw game.");
+    tttHideWinLine();
+  }
+  tttRenderBoard();
+}
+
+function tttBotTurn() {
+  if (tttGameOver) return;
+  tttBotThinking = true;
+  tttRenderBoard();
+
+  setTimeout(() => {
+    const move = tttFindBestBotMove();
+    if (move === -1) {
+      tttBotThinking = false;
+      tttRenderBoard();
+      return;
+    }
+
+    // Only legal move on an empty cell.
+    if (tttBoard[move] !== "") {
+      tttBotThinking = false;
+      tttRenderBoard();
+      return;
+    }
+    tttBoard[move] = tttBot;
+
+    const state = tttGetGameState(tttBoard);
+    if (state === "ongoing") {
+      tttSetStatus("Your move. Arif Azinuddin is waiting.");
+    } else {
+      tttFinishGame(state);
+    }
+
+    tttBotThinking = false;
+    tttRenderBoard();
+  }, 260);
+}
+
+function tttHandleCellClick(event) {
+  const cell = event.target.closest(".tictactoe-cell");
+  if (!cell || tttGameOver || tttBotThinking) return;
+
+  const idx = Number(cell.dataset.index);
+  if (!Number.isInteger(idx) || tttBoard[idx]) return;
+
+  tttBoard[idx] = tttHuman;
+  tttRenderBoard();
+
+  const state = tttGetGameState(tttBoard);
+  if (state === "human") {
+    tttFinishGame("human");
+    return;
+  }
+  if (state === "draw") {
+    tttFinishGame("draw");
+    return;
+  }
+
+  tttSetStatus("Arif is thinking...");
+  tttBotTurn();
+}
+
+function tttResetGame() {
+  tttBoard = Array(9).fill("");
+  tttGameOver = false;
+  tttBotThinking = false;
+  tttSetStatus("Your move. Arif Azinuddin plays fair.");
+  tttHideWinLine();
+  tttRenderBoard();
+}
+
+const damhajiSize = 8;
+const damhajiHuman = "human";
+const damhajiBot = "bot";
+const damhajiKingRow = {
+  [damhajiHuman]: 0,
+  [damhajiBot]: damhajiSize - 1,
 };
 
-function openRHBGallery(galleryId) {
-  const gallery = rhbGalleries[galleryId];
-  if (!gallery) return;
-  document.getElementById("galleryModalTitle").textContent = gallery.title;
-  const grid = document.getElementById("galleryGrid");
-  grid.innerHTML = "";
-  gallery.images.forEach((src) => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = gallery.title;
-    img.loading = "lazy";
-    grid.appendChild(img);
+let damhajiBoard = Array(damhajiSize * damhajiSize).fill(null);
+let damhajiTurn = damhajiHuman;
+let damhajiSelectedCell = -1;
+let damhajiLegalMoves = [];
+let damhajiGameOver = false;
+let damhajiBotThinking = false;
+let damhajiBotTimer = 0;
+
+function damhajiToIndex(row, col) {
+  return row * damhajiSize + col;
+}
+
+function damhajiToRowCol(index) {
+  return { row: Math.floor(index / damhajiSize), col: index % damhajiSize };
+}
+
+function damhajiInside(row, col) {
+  return row >= 0 && row < damhajiSize && col >= 0 && col < damhajiSize;
+}
+
+function damhajiIsDarkCell(row, col) {
+  return (row + col) % 2 === 1;
+}
+
+function damhajiGetDirections(piece) {
+  if (!piece) return [];
+  if (piece.king) return [[-1, -1], [-1, 1], [1, -1], [1, 1]];
+  return piece.player === damhajiHuman ? [[-1, -1], [-1, 1]] : [[1, -1], [1, 1]];
+}
+
+function damhajiBuildInitialBoard() {
+  const board = Array(damhajiSize * damhajiSize).fill(null);
+  for (let row = 0; row < damhajiSize; row += 1) {
+    for (let col = 0; col < damhajiSize; col += 1) {
+      if (!damhajiIsDarkCell(row, col)) continue;
+      const idx = damhajiToIndex(row, col);
+      if (row <= 2) {
+        board[idx] = { player: damhajiBot, king: false };
+      } else if (row >= damhajiSize - 3) {
+        board[idx] = { player: damhajiHuman, king: false };
+      }
+    }
+  }
+  return board;
+}
+
+function damhajiApplyMoveToBoard(board, move) {
+  const next = board.slice();
+  const piece = next[move.from];
+  if (!piece) return next;
+
+  next[move.from] = null;
+  (move.captures || []).forEach((capturedIndex) => {
+    next[capturedIndex] = null;
   });
-  document.getElementById("galleryModal").style.display = "block";
+
+  const { row: targetRow } = damhajiToRowCol(move.to);
+  const shouldPromote = !piece.king && targetRow === damhajiKingRow[piece.player];
+  next[move.to] = {
+    player: piece.player,
+    king: piece.king || shouldPromote,
+  };
+  return next;
+}
+
+function damhajiFindCapturesFrom(board, fromIndex, piece) {
+  const all = [];
+
+  function dfs(currentBoard, currentIndex, captures, path) {
+    const dirs = damhajiGetDirections(piece);
+    let foundNextCapture = false;
+
+    dirs.forEach(([dr, dc]) => {
+      const { row, col } = damhajiToRowCol(currentIndex);
+      const midRow = row + dr;
+      const midCol = col + dc;
+      const landingRow = row + dr * 2;
+      const landingCol = col + dc * 2;
+      if (!damhajiInside(midRow, midCol) || !damhajiInside(landingRow, landingCol)) return;
+
+      const midIndex = damhajiToIndex(midRow, midCol);
+      const landingIndex = damhajiToIndex(landingRow, landingCol);
+      const middlePiece = currentBoard[midIndex];
+      if (!middlePiece || middlePiece.player === piece.player) return;
+      if (currentBoard[landingIndex]) return;
+
+      foundNextCapture = true;
+      const movedBoard = currentBoard.slice();
+      movedBoard[currentIndex] = null;
+      movedBoard[midIndex] = null;
+      movedBoard[landingIndex] = piece;
+
+      dfs(
+        movedBoard,
+        landingIndex,
+        captures.concat(midIndex),
+        path.concat(landingIndex)
+      );
+    });
+
+    if (!foundNextCapture && captures.length > 0) {
+      all.push({
+        from: fromIndex,
+        to: currentIndex,
+        captures,
+        path,
+        isCapture: true,
+      });
+    }
+  }
+
+  dfs(board, fromIndex, [], []);
+  return all;
+}
+
+function damhajiGetLegalMoves(board, player) {
+  const captureMoves = [];
+  const normalMoves = [];
+
+  for (let i = 0; i < board.length; i += 1) {
+    const piece = board[i];
+    if (!piece || piece.player !== player) continue;
+
+    const captures = damhajiFindCapturesFrom(board, i, piece);
+    if (captures.length > 0) {
+      captureMoves.push(...captures);
+      continue;
+    }
+
+    const dirs = damhajiGetDirections(piece);
+    dirs.forEach(([dr, dc]) => {
+      const { row, col } = damhajiToRowCol(i);
+      const nr = row + dr;
+      const nc = col + dc;
+      if (!damhajiInside(nr, nc)) return;
+      const targetIdx = damhajiToIndex(nr, nc);
+      if (board[targetIdx]) return;
+      normalMoves.push({
+        from: i,
+        to: targetIdx,
+        captures: [],
+        path: [targetIdx],
+        isCapture: false,
+      });
+    });
+  }
+
+  return captureMoves.length > 0 ? captureMoves : normalMoves;
+}
+
+function damhajiGetMaterialCount(board, player) {
+  let men = 0;
+  let kings = 0;
+  board.forEach((piece) => {
+    if (!piece || piece.player !== player) return;
+    if (piece.king) kings += 1;
+    else men += 1;
+  });
+  return { men, kings };
+}
+
+function damhajiEvaluateBoard(board) {
+  let score = 0;
+  for (let i = 0; i < board.length; i += 1) {
+    const piece = board[i];
+    if (!piece) continue;
+    const { row } = damhajiToRowCol(i);
+    const progression =
+      piece.player === damhajiBot
+        ? row
+        : (damhajiSize - 1 - row);
+    const value = piece.king ? 182 : 100 + progression * 4;
+    score += piece.player === damhajiBot ? value : -value;
+  }
+
+  const botMobility = damhajiGetLegalMoves(board, damhajiBot).length;
+  const humanMobility = damhajiGetLegalMoves(board, damhajiHuman).length;
+  score += (botMobility - humanMobility) * 2;
+
+  return score;
+}
+
+function damhajiMinimax(board, turn, depth, alpha, beta) {
+  const botMoves = damhajiGetLegalMoves(board, damhajiBot);
+  const humanMoves = damhajiGetLegalMoves(board, damhajiHuman);
+  const botPieces = damhajiGetMaterialCount(board, damhajiBot);
+  const humanPieces = damhajiGetMaterialCount(board, damhajiHuman);
+  const botTotal = botPieces.men + botPieces.kings;
+  const humanTotal = humanPieces.men + humanPieces.kings;
+
+  if (botTotal === 0 || botMoves.length === 0) {
+    return { score: -10000 - depth };
+  }
+  if (humanTotal === 0 || humanMoves.length === 0) {
+    return { score: 10000 + depth };
+  }
+
+  if (depth <= 0) {
+    return { score: damhajiEvaluateBoard(board) };
+  }
+
+  const moves = turn === damhajiBot ? botMoves : humanMoves;
+  if (moves.length === 0) {
+    return { score: turn === damhajiBot ? -9000 - depth : 9000 + depth };
+  }
+
+  if (turn === damhajiBot) {
+    let bestScore = -Infinity;
+    let bestMove = null;
+    for (let i = 0; i < moves.length; i += 1) {
+      const move = moves[i];
+      const next = damhajiApplyMoveToBoard(board, move);
+      const result = damhajiMinimax(next, damhajiHuman, depth - 1, alpha, beta);
+      if (result.score > bestScore) {
+        bestScore = result.score;
+        bestMove = move;
+      }
+      alpha = Math.max(alpha, bestScore);
+      if (beta <= alpha) break;
+    }
+    return { score: bestScore, move: bestMove };
+  }
+
+  let bestScore = Infinity;
+  let bestMove = null;
+  for (let i = 0; i < moves.length; i += 1) {
+    const move = moves[i];
+    const next = damhajiApplyMoveToBoard(board, move);
+    const result = damhajiMinimax(next, damhajiBot, depth - 1, alpha, beta);
+    if (result.score < bestScore) {
+      bestScore = result.score;
+      bestMove = move;
+    }
+    beta = Math.min(beta, bestScore);
+    if (beta <= alpha) break;
+  }
+  return { score: bestScore, move: bestMove };
+}
+
+function damhajiChooseBotMove() {
+  const moves = damhajiGetLegalMoves(damhajiBoard, damhajiBot);
+  if (!moves.length) return null;
+  if (moves.length === 1) return moves[0];
+
+  const depth = moves.length <= 6 ? 7 : 6;
+  let bestScore = -Infinity;
+  let bestMoves = [];
+
+  moves.forEach((move) => {
+    const next = damhajiApplyMoveToBoard(damhajiBoard, move);
+    const result = damhajiMinimax(next, damhajiHuman, depth - 1, -Infinity, Infinity);
+    if (result.score > bestScore) {
+      bestScore = result.score;
+      bestMoves = [move];
+    } else if (result.score === bestScore) {
+      bestMoves.push(move);
+    }
+  });
+
+  if (!bestMoves.length) return moves[0];
+  return bestMoves[Math.floor(Math.random() * bestMoves.length)];
+}
+
+function damhajiSetStatus(text) {
+  if (damhajiStatusEl) damhajiStatusEl.textContent = text;
+}
+
+function damhajiUpdateScoreboard() {
+  if (damhajiUserScoreEl) damhajiUserScoreEl.textContent = String(damhajiUserScore);
+  if (damhajiBotScoreEl) damhajiBotScoreEl.textContent = String(damhajiBotScore);
+}
+
+function damhajiSetTurnStatus() {
+  if (damhajiGameOver) return;
+  if (damhajiTurn === damhajiBot) {
+    damhajiSetStatus("Arif Azinuddin is calculating...");
+    return;
+  }
+  const captureMandatory = damhajiLegalMoves.some((move) => move.isCapture);
+  if (captureMandatory) {
+    damhajiSetStatus("Your turn (White). Capture is mandatory.");
+  } else {
+    damhajiSetStatus("Your turn (White).");
+  }
+}
+
+function damhajiRenderBoard() {
+  if (!damhajiBoardEl) return;
+
+  if (!damhajiBoardEl.dataset.ready) {
+    damhajiBoardEl.innerHTML = "";
+    for (let row = 0; row < damhajiSize; row += 1) {
+      for (let col = 0; col < damhajiSize; col += 1) {
+        const idx = damhajiToIndex(row, col);
+        const cell = document.createElement("button");
+        cell.type = "button";
+        cell.className = `damhaji-cell ${damhajiIsDarkCell(row, col) ? "damhaji-cell--dark" : "damhaji-cell--light"}`;
+        cell.dataset.index = String(idx);
+        cell.setAttribute("aria-label", `Dam Haji cell ${idx + 1}`);
+        damhajiBoardEl.appendChild(cell);
+      }
+    }
+    damhajiBoardEl.dataset.ready = "1";
+  }
+
+  const selectableMoves = damhajiSelectedCell >= 0
+    ? damhajiLegalMoves.filter((move) => move.from === damhajiSelectedCell)
+    : [];
+  const hintTargets = new Set(selectableMoves.map((move) => move.to));
+  const captureTargets = new Set(
+    selectableMoves.filter((move) => move.isCapture).map((move) => move.to)
+  );
+
+  damhajiBoardEl.querySelectorAll(".damhaji-cell").forEach((cell) => {
+    const idx = Number(cell.dataset.index);
+    const piece = damhajiBoard[idx];
+    const isSelected = idx === damhajiSelectedCell;
+    const isHint = hintTargets.has(idx);
+    const isCaptureHint = captureTargets.has(idx);
+
+    cell.classList.toggle("damhaji-cell--selected", isSelected);
+    cell.classList.toggle("damhaji-cell--hint", isHint);
+    cell.classList.toggle("damhaji-cell--capture", isCaptureHint);
+    cell.innerHTML = "";
+
+    if (piece) {
+      const pieceEl = document.createElement("span");
+      pieceEl.className = `damhaji-piece ${
+        piece.player === damhajiHuman ? "damhaji-piece--human" : "damhaji-piece--bot"
+      } ${piece.king ? "damhaji-piece--king" : ""}`.trim();
+      if (piece.king) {
+        const kingIconEl = document.createElement("img");
+        kingIconEl.className = "damhaji-king-icon";
+        kingIconEl.src = "assets/img/songkok.png";
+        kingIconEl.alt = "King";
+        pieceEl.appendChild(kingIconEl);
+      }
+      cell.appendChild(pieceEl);
+    }
+  });
+}
+
+function damhajiCheckAndHandleWinner() {
+  const humanMoves = damhajiGetLegalMoves(damhajiBoard, damhajiHuman);
+  const botMoves = damhajiGetLegalMoves(damhajiBoard, damhajiBot);
+  const humanPieces = damhajiGetMaterialCount(damhajiBoard, damhajiHuman);
+  const botPieces = damhajiGetMaterialCount(damhajiBoard, damhajiBot);
+  const humanCount = humanPieces.men + humanPieces.kings;
+  const botCount = botPieces.men + botPieces.kings;
+
+  if (botCount === 0 || botMoves.length === 0) {
+    damhajiGameOver = true;
+    damhajiUserScore += 1;
+    damhajiUpdateScoreboard();
+    damhajiSetStatus("You win. Arif Azinuddin has no legal move.");
+    damhajiRenderBoard();
+    return true;
+  }
+  if (humanCount === 0 || humanMoves.length === 0) {
+    damhajiGameOver = true;
+    damhajiBotScore += 1;
+    damhajiUpdateScoreboard();
+    damhajiSetStatus("Arif Azinuddin wins. You have no legal move.");
+    damhajiRenderBoard();
+    return true;
+  }
+  return false;
+}
+
+function damhajiExecuteMove(move) {
+  damhajiBoard = damhajiApplyMoveToBoard(damhajiBoard, move);
+  damhajiSelectedCell = -1;
+  damhajiTurn = damhajiTurn === damhajiHuman ? damhajiBot : damhajiHuman;
+  damhajiLegalMoves = damhajiGetLegalMoves(damhajiBoard, damhajiTurn);
+  damhajiRenderBoard();
+}
+
+function damhajiHandleBotTurn() {
+  if (damhajiGameOver || damhajiTurn !== damhajiBot || damhajiBotThinking) return;
+  damhajiBotThinking = true;
+  damhajiSetTurnStatus();
+
+  damhajiBotTimer = window.setTimeout(() => {
+    const move = damhajiChooseBotMove();
+    damhajiBotThinking = false;
+    if (!move) {
+      damhajiCheckAndHandleWinner();
+      return;
+    }
+    damhajiExecuteMove(move);
+    if (!damhajiCheckAndHandleWinner()) {
+      damhajiSetTurnStatus();
+    }
+  }, 260);
+}
+
+function damhajiHandleCellClick(event) {
+  if (damhajiGameOver || damhajiBotThinking || damhajiTurn !== damhajiHuman) return;
+  const cell = event.target.closest(".damhaji-cell");
+  if (!cell) return;
+
+  const idx = Number(cell.dataset.index);
+  if (!Number.isInteger(idx)) return;
+  const piece = damhajiBoard[idx];
+
+  const movesFromSelected = damhajiSelectedCell >= 0
+    ? damhajiLegalMoves.filter((move) => move.from === damhajiSelectedCell)
+    : [];
+  const selectedMove = movesFromSelected.find((move) => move.to === idx);
+  if (selectedMove) {
+    damhajiExecuteMove(selectedMove);
+    if (!damhajiCheckAndHandleWinner()) {
+      damhajiSetTurnStatus();
+      damhajiHandleBotTurn();
+    }
+    return;
+  }
+
+  if (piece && piece.player === damhajiHuman) {
+    const hasMoves = damhajiLegalMoves.some((move) => move.from === idx);
+    if (hasMoves) {
+      damhajiSelectedCell = idx;
+      damhajiRenderBoard();
+      return;
+    }
+  }
+
+  damhajiSelectedCell = -1;
+  damhajiRenderBoard();
+}
+
+function damhajiResetGame() {
+  if (damhajiBotTimer) {
+    window.clearTimeout(damhajiBotTimer);
+    damhajiBotTimer = 0;
+  }
+  damhajiBoard = damhajiBuildInitialBoard();
+  damhajiTurn = damhajiHuman;
+  damhajiSelectedCell = -1;
+  damhajiGameOver = false;
+  damhajiBotThinking = false;
+  damhajiLegalMoves = damhajiGetLegalMoves(damhajiBoard, damhajiTurn);
+  damhajiRenderBoard();
+  damhajiSetTurnStatus();
+}
+
+const fleabagPhysics = {
+  gravity: 0.32,
+  scale: 0.17,
+};
+
+const fleabagBaseShot = { damage: 16, radius: 6, speedMultiplier: 1 };
+const fleabagPowerModes = ["multi", "bigball", "heal"];
+
+let fleabagChargeStartAt = 0;
+let fleabagCharging = false;
+let fleabagChargeFrame = 0;
+let fleabagHumanChargePower = 0.15;
+let fleabagVisualLoopFrame = 0;
+
+const muttImage = new Image();
+let muttImageReady = false;
+muttImage.onload = () => {
+  muttImageReady = true;
+  fleabagDrawArena();
+};
+muttImage.src = "assets/img/arif-passport.PNG";
+
+const fleabagBackgroundImage = new Image();
+let fleabagBackgroundReady = false;
+fleabagBackgroundImage.onload = () => {
+  fleabagBackgroundReady = true;
+  fleabagDrawArena();
+};
+fleabagBackgroundImage.src = "assets/img/fightme-bg.png";
+
+let fleabagState = {
+  turn: "human",
+  gameOver: false,
+  busy: false,
+  wind: 0,
+  projectile: null,
+  selectedPowerMode: null,
+  fleabagHp: 100,
+  muttHp: 100,
+  lastShot: null,
+  powerUses: {
+    multi: 0,
+    bigball: 0,
+    heal: 0,
+  },
+  botPowerUses: {
+    multi: 0,
+    bigball: 0,
+    heal: 0,
+  },
+  emote: null,
+  finishFlagLoser: null,
+  winner: "",
+};
+
+function fleabagSetStatus(text) {
+  if (fleabagStatusEl) fleabagStatusEl.textContent = text;
+}
+
+function fleabagGetModeMaxUses() {
+  return 5;
+}
+
+function fleabagGetRemainingUses(mode) {
+  const used = fleabagState.powerUses[mode] || 0;
+  return Math.max(0, fleabagGetModeMaxUses() - used);
+}
+
+function fleabagGetBotRemainingUses(mode) {
+  const used = fleabagState.botPowerUses[mode] || 0;
+  return Math.max(0, fleabagGetModeMaxUses() - used);
+}
+
+function fleabagCanUseMode(mode) {
+  if (mode === "multi" || mode === "bigball" || mode === "heal") {
+    return fleabagGetRemainingUses(mode) > 0;
+  }
+  return true;
+}
+
+function fleabagFindNextAvailableMode() {
+  const preferred = ["multi", "bigball", "heal"];
+  return preferred.find((mode) => fleabagCanUseMode(mode)) || null;
+}
+
+function fleabagConsumeModeUse(mode) {
+  if (!fleabagState.powerUses[mode] && fleabagState.powerUses[mode] !== 0) return;
+  fleabagState.powerUses[mode] += 1;
+}
+
+function fleabagConsumeBotModeUse(mode) {
+  if (!fleabagState.botPowerUses[mode] && fleabagState.botPowerUses[mode] !== 0) return;
+  fleabagState.botPowerUses[mode] += 1;
+}
+
+function fleabagGetHealAmount() {
+  const uses = fleabagState.powerUses.heal || 0;
+  return Math.max(10, 50 - uses * 10);
+}
+
+function fleabagGetBotHealAmount() {
+  const uses = fleabagState.botPowerUses.heal || 0;
+  return Math.max(10, 50 - uses * 10);
+}
+
+function fleabagSetCharacterEmote(target, text) {
+  fleabagState.emote = {
+    target,
+    text,
+    until: performance.now() + 1300,
+  };
+  fleabagEnsureVisualLoop();
+}
+
+function fleabagShowOutcomeEmote(thrower, didHit) {
+  const opponent = thrower === "human" ? "mutt" : "fleabag";
+  fleabagSetCharacterEmote(opponent, didHit ? "auch😭" : "haha😂");
+}
+
+function fleabagEnsureVisualLoop() {
+  if (fleabagVisualLoopFrame) return;
+  const frame = () => {
+    const now = performance.now();
+    const hasEmote = !!(fleabagState.emote && fleabagState.emote.until > now);
+    const hasFlag = !!fleabagState.finishFlagLoser;
+    const isModalOpen = !!(tictactoeModal && tictactoeModal.style.display === "block");
+
+    fleabagDrawArena();
+
+    if ((hasEmote || hasFlag) && isModalOpen) {
+      fleabagVisualLoopFrame = requestAnimationFrame(frame);
+      return;
+    }
+    fleabagVisualLoopFrame = 0;
+  };
+
+  fleabagVisualLoopFrame = requestAnimationFrame(frame);
+}
+
+function fleabagGetSelectedMode() {
+  return fleabagPowerModes.includes(fleabagState.selectedPowerMode)
+    ? fleabagState.selectedPowerMode
+    : null;
+}
+
+function fleabagGetChargedPowerValue(charge, speedMultiplier) {
+  const clampedCharge = Math.max(0.15, Math.min(1, charge));
+  return (34 + clampedCharge * 72) * speedMultiplier;
+}
+
+function fleabagGetDamageForShot(baseDamage, charge, damageMultiplier) {
+  return Math.round(baseDamage * (0.7 + Math.max(0.2, Math.min(1, charge))) * damageMultiplier);
+}
+
+function fleabagUpdateWindIndicator() {
+  if (!fleabagWindIndicatorEl) return;
+  const amount = Math.abs(fleabagState.wind).toFixed(2);
+  const arrow = fleabagState.wind >= 0 ? "->" : "<-";
+  fleabagWindIndicatorEl.textContent = `Wind: ${arrow} ${amount}`;
+}
+
+function fleabagUpdateHealthHud() {
+  const fleabagPercent = Math.max(0, Math.min(100, fleabagState.fleabagHp));
+  const muttPercent = Math.max(0, Math.min(100, fleabagState.muttHp));
+
+  if (fleabagFleabagHpEl) fleabagFleabagHpEl.textContent = String(fleabagState.fleabagHp);
+  if (fleabagMuttHpEl) fleabagMuttHpEl.textContent = String(fleabagState.muttHp);
+  if (fleabagFleabagHpBarEl) fleabagFleabagHpBarEl.style.width = `${fleabagPercent}%`;
+  if (fleabagMuttHpBarEl) fleabagMuttHpBarEl.style.width = `${muttPercent}%`;
+}
+
+function fleabagUpdatePowerButtons() {
+  if (!fleabagPowerOptions) return;
+  fleabagPowerOptions.querySelectorAll(".fleabag-power-btn").forEach((btn) => {
+    const mode = String(btn.dataset.power || "multi");
+    const left = fleabagGetRemainingUses(mode);
+    const healAmount = fleabagGetHealAmount();
+    const baseLabel =
+      mode === "multi"
+        ? `<i class="fa-solid fa-2 fa-beat-fade"></i> 2x Throw`
+        : mode === "bigball"
+          ? `<i class="fa-solid fa-bowling-ball fa-beat-fade"></i> Big Ball`
+          : `<i class="fa-solid fa-heart-circle-plus fa-beat-fade"></i> Heal +${left > 0 ? healAmount : 0}`;
+    btn.innerHTML = `${baseLabel} (${left})`;
+    btn.disabled = left <= 0;
+  });
+}
+
+function fleabagUpdateBotUsageHud() {
+  if (!fleabagBotUsageEl) return;
+  const usedMulti = fleabagState.botPowerUses.multi || 0;
+  const usedBigBall = fleabagState.botPowerUses.bigball || 0;
+  const usedHeal = fleabagState.botPowerUses.heal || 0;
+  fleabagBotUsageEl.textContent = `Bot power uses - 2x: ${usedMulti}/5 | BigBall: ${usedBigBall}/5 | Heal: ${usedHeal}/5`;
+}
+
+function fleabagSetChargeUi(progress) {
+  const clamped = Math.max(0, Math.min(1, progress));
+  if (fleabagChargeFillEl) fleabagChargeFillEl.style.width = `${Math.round(clamped * 100)}%`;
+}
+
+function fleabagShowFinishFlag(loserName) {
+  fleabagState.finishFlagLoser = loserName === "Mutt" ? "mutt" : "fleabag";
+  if (fleabagFinishFlagEl) {
+    fleabagFinishFlagEl.classList.add("is-hidden");
+  }
+  fleabagEnsureVisualLoop();
+}
+
+function fleabagHideFinishFlag() {
+  fleabagState.finishFlagLoser = null;
+  if (fleabagFinishFlagEl) {
+    fleabagFinishFlagEl.classList.add("is-hidden");
+  }
+}
+
+function fleabagGetArena() {
+  if (!fleabagCanvas) return null;
+  const width = fleabagCanvas.width;
+  const height = fleabagCanvas.height;
+  const groundY = Math.round(height * 0.8);
+  return {
+    width,
+    height,
+    groundY,
+    fleabagX: 72,
+    muttX: width - 72,
+    launchY: groundY - 28,
+    hitRadius: 24,
+  };
+}
+
+function fleabagDrawWindArrow(ctx, arena) {
+  const centerY = 36;
+  const startX = arena.width / 2 - 45;
+  const lineLength = 90;
+  const direction = fleabagState.wind >= 0 ? 1 : -1;
+  const scaled = Math.min(1, Math.abs(fleabagState.wind) / 0.35);
+  const activeLength = lineLength * (0.35 + scaled * 0.65);
+  const endX = startX + activeLength * direction;
+
+  ctx.strokeStyle = "#0f172a";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(startX, centerY);
+  ctx.lineTo(endX, centerY);
+  ctx.stroke();
+
+  ctx.fillStyle = "#0f172a";
+  ctx.beginPath();
+  ctx.moveTo(endX, centerY);
+  ctx.lineTo(endX - 8 * direction, centerY - 6);
+  ctx.lineTo(endX - 8 * direction, centerY + 6);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function fleabagDrawMutt(ctx, arena) {
+  const x = arena.muttX;
+  const y = arena.launchY;
+  const imageW = 54;
+  const imageH = 54;
+
+  if (muttImageReady) {
+    ctx.drawImage(muttImage, x - imageW / 2, y - imageH + 18, imageW, imageH);
+    return;
+  }
+
+  ctx.font = "700 30px system-ui, -apple-system, Segoe UI, sans-serif";
+  ctx.fillStyle = "#0f172a";
+  ctx.fillText("M", x - 11, y + 10);
+}
+
+function fleabagDrawArena() {
+  if (!fleabagCanvas) return;
+  const ctx = fleabagCanvas.getContext("2d");
+  const arena = fleabagGetArena();
+  if (!ctx || !arena) return;
+
+  ctx.clearRect(0, 0, arena.width, arena.height);
+
+  if (fleabagBackgroundReady) {
+    ctx.drawImage(fleabagBackgroundImage, 0, 0, arena.width, arena.groundY);
+    ctx.fillStyle = "rgba(255,255,255,0.18)";
+    ctx.fillRect(0, 0, arena.width, arena.groundY);
+  } else {
+    ctx.fillStyle = "rgba(255,255,255,0.2)";
+    ctx.fillRect(0, 0, arena.width, arena.groundY);
+  }
+  ctx.fillStyle = "rgba(0,0,0,0.14)";
+  ctx.fillRect(0, arena.groundY, arena.width, arena.height - arena.groundY);
+
+  ctx.strokeStyle = "rgba(15, 23, 42, 0.25)";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(0, arena.groundY);
+  ctx.lineTo(arena.width, arena.groundY);
+  ctx.stroke();
+  fleabagDrawWindArrow(ctx, arena);
+
+  ctx.fillStyle = "#1e293b";
+  ctx.font = "700 16px system-ui, -apple-system, Segoe UI, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(
+    `Wind ${fleabagState.wind >= 0 ? "->" : "<-"} ${Math.abs(fleabagState.wind).toFixed(2)}`,
+    arena.width / 2,
+    24
+  );
+  ctx.textAlign = "start";
+  ctx.fillText("Fleabag (You)", arena.fleabagX - 30, arena.groundY + 30);
+  ctx.fillText("Arif Azi (Mutt)", arena.muttX - 85, arena.groundY + 30);
+
+  ctx.font = "36px serif";
+  ctx.fillText("🐱", arena.fleabagX - 14, arena.launchY + 10);
+  fleabagDrawMutt(ctx, arena);
+
+  const now = performance.now();
+  if (fleabagState.emote && fleabagState.emote.until > now) {
+    const isFleabag = fleabagState.emote.target === "fleabag";
+    const emoteX = isFleabag ? arena.fleabagX - 22 : arena.muttX - 22;
+    const emoteY = arena.launchY - 36;
+    ctx.font = "700 20px system-ui, -apple-system, Segoe UI, sans-serif";
+    ctx.fillStyle = "#0f172a";
+    ctx.fillText(fleabagState.emote.text, emoteX, emoteY);
+  }
+
+  if (fleabagState.finishFlagLoser) {
+    const t = now / 180;
+    const waveY = Math.sin(t) * 3;
+    const loserX = fleabagState.finishFlagLoser === "fleabag" ? arena.fleabagX : arena.muttX;
+    ctx.font = "28px serif";
+    ctx.fillText("🏳️;(", loserX - 12, arena.launchY - 48 + waveY);
+  }
+
+  if (fleabagState.projectile) {
+    ctx.beginPath();
+    ctx.fillStyle = "#7c3aed";
+    ctx.arc(
+      fleabagState.projectile.x,
+      fleabagState.projectile.y,
+      fleabagState.projectile.radius || 7,
+      0,
+      Math.PI * 2
+    );
+    ctx.fill();
+  }
+}
+
+function fleabagCreateProjectile(startX, startY, angleDeg, power, direction, radius, damage) {
+  const angleRad = (angleDeg * Math.PI) / 180;
+  const baseVx = Math.cos(angleRad) * power * fleabagPhysics.scale * direction;
+  const baseVy = -Math.sin(angleRad) * power * fleabagPhysics.scale;
+
+  return {
+    x: startX,
+    y: startY,
+    vx: baseVx,
+    vy: baseVy,
+    radius,
+    damage,
+  };
+}
+
+function fleabagUpdateProjectile() {
+  const arena = fleabagGetArena();
+  if (!arena || !fleabagState.projectile) return "miss";
+
+  const p = fleabagState.projectile;
+  p.x += p.vx;
+  p.y += p.vy;
+  p.vx += fleabagState.wind * 0.03;
+  p.vy += fleabagPhysics.gravity;
+
+  const targetX = fleabagState.turn === "human" ? arena.muttX : arena.fleabagX;
+  const targetY = arena.launchY;
+  const distance = Math.hypot(p.x - targetX, p.y - targetY);
+  if (distance <= arena.hitRadius + (p.radius || 0) * 0.3) return "hit";
+
+  if (p.x < -20 || p.x > arena.width + 20 || p.y > arena.height + 20) return "miss";
+  if (p.y >= arena.groundY) return "miss";
+  return "flying";
+}
+
+function fleabagAnimateProjectile(onDone) {
+  function frame() {
+    const state = fleabagUpdateProjectile();
+    fleabagDrawArena();
+
+    if (state === "flying") {
+      requestAnimationFrame(frame);
+      return;
+    }
+
+    fleabagState.projectile = null;
+    fleabagDrawArena();
+    if (onDone) onDone(state);
+  }
+
+  requestAnimationFrame(frame);
+}
+
+function fleabagCompleteTurn(result) {
+  const thrower = fleabagState.turn;
+
+  if (result === "hit") {
+    const shotDamage = fleabagState.lastShot ? fleabagState.lastShot.damage : 15;
+
+    if (fleabagState.turn === "human") {
+      fleabagState.muttHp = Math.max(0, fleabagState.muttHp - shotDamage);
+      fleabagShowOutcomeEmote(thrower, true);
+      if (fleabagState.muttHp <= 0) {
+        fleabagState.gameOver = true;
+        fleabagState.winner = "Fleabag";
+        fleabagUserScore += 1;
+        fleabagUpdateScoreboard();
+        fleabagSetStatus("Fleabag wins. Mutt HP is 0.");
+        fleabagShowFinishFlag("Mutt");
+      } else {
+        fleabagSetStatus(`Hit! Mutt takes ${shotDamage} damage.`);
+      }
+    } else {
+      fleabagState.fleabagHp = Math.max(0, fleabagState.fleabagHp - shotDamage);
+      fleabagShowOutcomeEmote(thrower, true);
+      if (fleabagState.fleabagHp <= 0) {
+        fleabagState.gameOver = true;
+        fleabagState.winner = "Mutt";
+        fleabagBotScore += 1;
+        fleabagUpdateScoreboard();
+        fleabagSetStatus("Arif Azinuddin (Mutt) wins.");
+        fleabagShowFinishFlag("Fleabag");
+      } else {
+        fleabagSetStatus(`Mutt hits you for ${shotDamage} damage.`);
+      }
+    }
+
+    fleabagUpdateHealthHud();
+    if (fleabagState.gameOver) {
+      fleabagState.busy = false;
+      return;
+    }
+
+    fleabagState.wind = Number((Math.random() * 0.7 - 0.35).toFixed(2));
+    fleabagUpdateWindIndicator();
+    fleabagDrawArena();
+
+    if (thrower === "human") {
+      fleabagState.turn = "bot";
+      fleabagState.busy = false;
+      setTimeout(() => {
+        if (!fleabagState.gameOver) {
+          fleabagSetStatus("Arif Azinuddin (Mutt) is calculating...");
+          fleabagBotThrow();
+        }
+      }, 420);
+    } else {
+      fleabagState.turn = "human";
+      fleabagState.busy = false;
+      fleabagSetStatus("Your turn.");
+    }
+    return;
+  }
+
+  fleabagState.wind = Number((Math.random() * 0.7 - 0.35).toFixed(2));
+  fleabagUpdateWindIndicator();
+  fleabagDrawArena();
+
+  if (thrower === "human") {
+    fleabagShowOutcomeEmote(thrower, false);
+    fleabagState.turn = "bot";
+    fleabagState.busy = false;
+    fleabagSetStatus("You missed. Mutt is calculating...");
+    setTimeout(() => fleabagBotThrow(), 420);
+  } else {
+    fleabagShowOutcomeEmote(thrower, false);
+    fleabagState.turn = "human";
+    fleabagState.busy = false;
+    fleabagSetStatus("Mutt missed. Your turn.");
+  }
+}
+
+function fleabagLandingDistanceToTarget(angle, power, direction, targetX, startX, startY) {
+  let x = startX;
+  let y = startY;
+  const angleRad = (angle * Math.PI) / 180;
+  let vx = Math.cos(angleRad) * power * fleabagPhysics.scale * direction;
+  let vy = -Math.sin(angleRad) * power * fleabagPhysics.scale;
+  let iterations = 0;
+  const arena = fleabagGetArena();
+  if (!arena) return Infinity;
+
+  while (y < arena.groundY && iterations < 1800) {
+    x += vx;
+    y += vy;
+    vx += fleabagState.wind * 0.03;
+    vy += fleabagPhysics.gravity;
+    iterations += 1;
+  }
+
+  return Math.abs(x - targetX);
+}
+
+function fleabagFindBestBotShot() {
+  const arena = fleabagGetArena();
+  if (!arena) return { angle: 45, power: 70, mode: "normal", damage: 16, radius: 6 };
+
+  let best = { angle: 45, power: 70, mode: "normal", error: Infinity };
+
+  const botModesToTry = ["normal"];
+  if (fleabagGetBotRemainingUses("bigball") > 0) botModesToTry.push("bigball");
+
+  botModesToTry.forEach((mode) => {
+    const speedMultiplier = mode === "bigball" ? 1.08 : 1;
+    for (let angle = 15; angle <= 75; angle += 1) {
+      for (let power = 34; power <= 110; power += 1) {
+        const shotPower = power * speedMultiplier;
+        const error = fleabagLandingDistanceToTarget(
+          angle,
+          shotPower,
+          -1,
+          arena.fleabagX,
+          arena.muttX,
+          arena.launchY
+        );
+        if (error < best.error) {
+          best = { angle, power: shotPower, mode, error };
+        }
+      }
+    }
+  });
+
+  const jitter = Math.random() * 2 - 1;
+  const isBigBall = best.mode === "bigball";
+  return {
+    angle: Math.max(15, Math.min(75, Math.round(best.angle + jitter))),
+    power: Math.max(30, Math.min(120, Math.round(best.power + jitter))),
+    mode: best.mode,
+    damage: isBigBall ? fleabagBaseShot.damage * 2 : fleabagBaseShot.damage,
+    radius: isBigBall ? 13 : fleabagBaseShot.radius,
+  };
+}
+
+function fleabagFireShot(shotConfig, onComplete) {
+  const arena = fleabagGetArena();
+  if (!arena) return;
+  fleabagState.lastShot = { damage: shotConfig.damage };
+  fleabagState.projectile = fleabagCreateProjectile(
+    shotConfig.from === "mutt" ? arena.muttX : arena.fleabagX,
+    arena.launchY,
+    shotConfig.angle,
+    shotConfig.power,
+    shotConfig.direction,
+    shotConfig.radius,
+    shotConfig.damage
+  );
+  fleabagAnimateProjectile(onComplete);
+}
+
+function fleabagUseHumanHeal() {
+  if (fleabagState.gameOver || fleabagState.busy || fleabagState.turn !== "human") return;
+  if (!fleabagCanUseMode("heal")) {
+    fleabagSetStatus("Heal is depleted.");
+    return;
+  }
+  const healAmount = fleabagGetHealAmount();
+  fleabagConsumeModeUse("heal");
+  fleabagState.fleabagHp = Math.min(100, fleabagState.fleabagHp + healAmount);
+  fleabagUpdateHealthHud();
+  fleabagUpdatePowerButtons();
+  fleabagSetActivePowerButton(null);
+  fleabagSetStatus(`Fleabag used Heal +${healAmount}.`);
+  fleabagState.selectedPowerMode = null;
+  fleabagState.turn = "bot";
+  setTimeout(() => fleabagBotThrow(), 380);
+}
+
+function fleabagReleaseHumanThrow() {
+  const arena = fleabagGetArena();
+  if (!arena || fleabagState.gameOver || fleabagState.busy || fleabagState.turn !== "human") return;
+
+  let mode = fleabagGetSelectedMode();
+  if (!fleabagCanUseMode(mode)) {
+    mode = fleabagFindNextAvailableMode();
+    fleabagState.selectedPowerMode = mode;
+    fleabagSetActivePowerButton(mode);
+  }
+
+  fleabagState.busy = true;
+  const isBigBall = mode === "bigball";
+  const isMulti = mode === "multi";
+  if (mode) {
+    fleabagConsumeModeUse(mode);
+    fleabagUpdatePowerButtons();
+    fleabagState.selectedPowerMode = null;
+    fleabagSetActivePowerButton(null);
+  }
+  if (mode && !fleabagCanUseMode(mode)) {
+    const nextMode = fleabagFindNextAvailableMode();
+    fleabagState.selectedPowerMode = nextMode;
+    fleabagSetActivePowerButton(nextMode);
+  }
+  const speedMultiplier = isBigBall ? 1.06 : 1;
+  const damageMultiplier = isBigBall ? 2 : 1;
+  const radius = isBigBall ? 13 : fleabagBaseShot.radius;
+  const power = fleabagGetChargedPowerValue(fleabagHumanChargePower, speedMultiplier);
+  const damage = fleabagGetDamageForShot(fleabagBaseShot.damage, fleabagHumanChargePower, damageMultiplier);
+
+  fleabagSetStatus(
+    `Fleabag throws (${isBigBall ? "Big Ball" : isMulti ? "2x Throw" : "Normal Throw"}, charge ${Math.round(
+      fleabagHumanChargePower * 100
+    )}%).`
+  );
+
+  const firstShot = { from: "fleabag", angle: 42, power, direction: 1, radius, damage };
+  if (!isMulti) {
+    fleabagFireShot(firstShot, fleabagCompleteTurn);
+    return;
+  }
+
+  const secondPower = power * 0.94;
+  const secondShot = { from: "fleabag", angle: 41, power: secondPower, direction: 1, radius, damage };
+  let humanAnyHit = false;
+  fleabagFireShot(firstShot, (result) => {
+    if (result === "hit") humanAnyHit = true;
+    fleabagSetStatus("Second throw...");
+    fleabagFireShot(secondShot, (secondResult) => {
+      if (secondResult === "hit") humanAnyHit = true;
+      fleabagCompleteTurn(humanAnyHit ? "hit" : "miss");
+    });
+  });
+}
+
+function fleabagStartCharging() {
+  if (fleabagState.gameOver || fleabagState.busy || fleabagState.turn !== "human" || fleabagCharging) return;
+  fleabagCharging = true;
+  fleabagChargeStartAt = performance.now();
+  fleabagHumanChargePower = 0.15;
+  fleabagSetChargeUi(fleabagHumanChargePower);
+  if (fleabagThrowHintEl) fleabagThrowHintEl.textContent = "Charging...";
+
+  const chargeDurationMs = 1400;
+  const frame = () => {
+    if (!fleabagCharging) return;
+    const elapsed = performance.now() - fleabagChargeStartAt;
+    fleabagHumanChargePower = Math.max(0.15, Math.min(1, elapsed / chargeDurationMs));
+    fleabagSetChargeUi(fleabagHumanChargePower);
+    fleabagChargeFrame = requestAnimationFrame(frame);
+  };
+  fleabagChargeFrame = requestAnimationFrame(frame);
+}
+
+function fleabagStopChargingAndThrow() {
+  if (!fleabagCharging) return;
+  fleabagCharging = false;
+  cancelAnimationFrame(fleabagChargeFrame);
+  if (fleabagThrowHintEl) fleabagThrowHintEl.textContent = "Hold Throw to charge power, then release.";
+  fleabagReleaseHumanThrow();
+  setTimeout(() => fleabagSetChargeUi(0), 120);
+}
+
+function fleabagBotThrow() {
+  const arena = fleabagGetArena();
+  if (!arena || fleabagState.gameOver || fleabagState.busy || fleabagState.turn !== "bot") return;
+
+  fleabagState.busy = true;
+  const canBotHeal = fleabagGetBotRemainingUses("heal") > 0;
+  if (canBotHeal && fleabagState.muttHp <= 40 && Math.random() < 0.35) {
+    const healAmount = fleabagGetBotHealAmount();
+    fleabagConsumeBotModeUse("heal");
+    fleabagState.muttHp = Math.min(100, fleabagState.muttHp + healAmount);
+    fleabagUpdateHealthHud();
+    fleabagUpdateBotUsageHud();
+    fleabagState.turn = "human";
+    fleabagState.busy = false;
+    fleabagSetStatus(`Mutt used Heal +${healAmount}.`);
+    return;
+  }
+
+  const shot = fleabagFindBestBotShot();
+  const canBotMulti = fleabagGetBotRemainingUses("multi") > 0;
+  const isMulti = canBotMulti && Math.random() < 0.28;
+  if (isMulti) {
+    fleabagConsumeBotModeUse("multi");
+  }
+  if (shot.mode === "bigball") {
+    fleabagConsumeBotModeUse("bigball");
+  }
+  fleabagUpdateBotUsageHud();
+  fleabagSetStatus(
+    `Arif Azinuddin (Mutt) throws (${
+      isMulti ? "2x Throw" : shot.mode === "bigball" ? "Big Ball" : "Normal Throw"
+    }).`
+  );
+
+  const firstShot = {
+    from: "mutt",
+    angle: shot.angle,
+    power: shot.power,
+    direction: -1,
+    radius: shot.radius,
+    damage: shot.damage,
+  };
+  if (!isMulti) {
+    fleabagFireShot(firstShot, fleabagCompleteTurn);
+    return;
+  }
+
+  const secondShot = {
+    from: "mutt",
+    angle: Math.max(15, Math.min(75, shot.angle + (Math.random() > 0.5 ? 1 : -1))),
+    power: shot.power * 0.94,
+    direction: -1,
+    radius: shot.radius,
+    damage: shot.damage,
+  };
+  let botAnyHit = false;
+  fleabagFireShot(firstShot, (result) => {
+    if (result === "hit") botAnyHit = true;
+    fleabagSetStatus("Mutt second throw...");
+    fleabagFireShot(secondShot, (secondResult) => {
+      if (secondResult === "hit") botAnyHit = true;
+      fleabagCompleteTurn(botAnyHit ? "hit" : "miss");
+    });
+  });
+}
+
+function fleabagSetActivePowerButton(modeValue) {
+  if (!fleabagPowerOptions) return;
+  fleabagPowerOptions.querySelectorAll(".fleabag-power-btn").forEach((btn) => {
+    const buttonMode = String(btn.dataset.power || "multi");
+    const isDisabled = !fleabagCanUseMode(buttonMode);
+    btn.classList.toggle("active", modeValue && buttonMode === modeValue && !isDisabled);
+    btn.disabled = isDisabled;
+  });
+}
+
+function fleabagResetGame() {
+  fleabagState = {
+    turn: "human",
+    gameOver: false,
+    busy: false,
+    wind: Number((Math.random() * 0.7 - 0.35).toFixed(2)),
+    projectile: null,
+    selectedPowerMode: null,
+    fleabagHp: 100,
+    muttHp: 100,
+    lastShot: null,
+    powerUses: {
+      multi: 0,
+      bigball: 0,
+      heal: 0,
+    },
+    botPowerUses: {
+      multi: 0,
+      bigball: 0,
+      heal: 0,
+    },
+    emote: null,
+    finishFlagLoser: null,
+    winner: "",
+  };
+  fleabagCharging = false;
+  cancelAnimationFrame(fleabagChargeFrame);
+  if (fleabagVisualLoopFrame) {
+    cancelAnimationFrame(fleabagVisualLoopFrame);
+    fleabagVisualLoopFrame = 0;
+  }
+  fleabagSetActivePowerButton(null);
+  fleabagUpdatePowerButtons();
+  fleabagUpdateBotUsageHud();
+  fleabagSetChargeUi(0);
+  fleabagUpdateWindIndicator();
+  fleabagUpdateHealthHud();
+  fleabagHideFinishFlag();
+  if (fleabagThrowHintEl) fleabagThrowHintEl.textContent = "Hold Throw to charge power, then release.";
+  fleabagSetStatus("You are Fleabag. Arif Azinuddin is Mutt.");
+  fleabagDrawArena();
+}
+
+function tttOpenModal() {
+  if (!tictactoeModal) return;
+  tttResetGame();
+  tttUpdateScoreboard();
+  fleabagResetGame();
+  fleabagUpdateScoreboard();
+  damhajiResetGame();
+  damhajiUpdateScoreboard();
+  setFightMeActiveGame(1);
+  tictactoeModal.style.display = "block";
   document.body.style.overflow = "hidden";
 }
+
+function handleFightMeModalClosed() {
+  if (damhajiBotTimer) {
+    window.clearTimeout(damhajiBotTimer);
+    damhajiBotTimer = 0;
+  }
+  damhajiBotThinking = false;
+}
+
+if (tictactoeOpenBtn) {
+  tictactoeOpenBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    tttOpenModal();
+  });
+}
+
+if (tictactoeBoardEl) {
+  tictactoeBoardEl.addEventListener("click", tttHandleCellClick);
+}
+
+if (tictactoeRestartBtn) {
+  tictactoeRestartBtn.addEventListener("click", tttResetGame);
+}
+
+if (fightMePrevBtn) {
+  fightMePrevBtn.addEventListener("click", goToPrevFightMeGame);
+}
+
+if (fightMeNextBtn) {
+  fightMeNextBtn.addEventListener("click", goToNextFightMeGame);
+}
+
+if (damhajiBoardEl) {
+  damhajiBoardEl.addEventListener("click", damhajiHandleCellClick);
+}
+
+if (damhajiRestartBtn) {
+  damhajiRestartBtn.addEventListener("click", damhajiResetGame);
+}
+
+if (fleabagPowerOptions) {
+  fleabagPowerOptions.addEventListener("click", (e) => {
+    const button = e.target.closest(".fleabag-power-btn");
+    if (!button) return;
+    const mode = String(button.dataset.power || "multi");
+    if (!fleabagPowerModes.includes(mode)) return;
+    if (!fleabagCanUseMode(mode)) {
+      fleabagSetStatus(`${mode === "heal" ? "Heal" : mode === "bigball" ? "Big Ball" : "2x Throw"} is depleted.`);
+      return;
+    }
+    if (mode === "heal") {
+      fleabagUseHumanHeal();
+      return;
+    }
+    fleabagState.selectedPowerMode = fleabagState.selectedPowerMode === mode ? null : mode;
+    fleabagSetActivePowerButton(fleabagState.selectedPowerMode);
+  });
+}
+
+if (fleabagThrowBtn) {
+  const startCharge = (event) => {
+    event.preventDefault();
+    fleabagStartCharging();
+  };
+  const releaseCharge = (event) => {
+    event.preventDefault();
+    fleabagStopChargingAndThrow();
+  };
+
+  fleabagThrowBtn.addEventListener("pointerdown", startCharge);
+  fleabagThrowBtn.addEventListener("pointerup", releaseCharge);
+  fleabagThrowBtn.addEventListener("pointerleave", releaseCharge);
+  fleabagThrowBtn.addEventListener("pointercancel", releaseCharge);
+}
+
+if (fleabagRestartBtn) {
+  fleabagRestartBtn.addEventListener("click", fleabagResetGame);
+}
+
+// Fallback open handler in case the nav link is re-rendered.
+document.addEventListener("click", (e) => {
+  const openBtn = e.target.closest("#openTicTacToe");
+  if (!openBtn) return;
+  e.preventDefault();
+  tttOpenModal();
+});
 
 // ========== CLOSE MODALS ==========
 document.querySelectorAll(".modal-close").forEach((closeBtn) => {
   closeBtn.onclick = function () {
     document.querySelectorAll(".modal").forEach((modal) => {
       modal.style.display = "none";
+      if (modal.id === "ticTacToeModal") {
+        handleFightMeModalClosed();
+      }
     });
     document.body.style.overflow = "auto";
   };
@@ -768,44 +2157,14 @@ document.querySelectorAll(".modal-close").forEach((closeBtn) => {
 window.onclick = function (event) {
   if (event.target.classList.contains("modal")) {
     event.target.style.display = "none";
+    if (event.target.id === "ticTacToeModal") {
+      handleFightMeModalClosed();
+    }
     document.body.style.overflow = "auto";
   }
 };
 
-// ========== THEME TOGGLE ==========
-const themeToggle = document.getElementById("themeToggle");
-const langToggle = document.getElementById("langToggle");
-const body = document.body;
-const themeIcon = themeToggle.querySelector("i");
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  body.classList.add("dark-mode");
-  themeIcon.classList.replace("fa-moon", "fa-sun");
-}
-
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-  const isDark = body.classList.contains("dark-mode");
-
-  themeIcon.style.transform = "rotate(360deg)";
-  setTimeout(() => {
-    themeIcon.classList.replace(
-      isDark ? "fa-moon" : "fa-sun",
-      isDark ? "fa-sun" : "fa-moon"
-    );
-    themeIcon.style.transform = "rotate(0deg)";
-  }, 150);
-
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-});
-
-if (langToggle) {
-  langToggle.addEventListener("click", () => {
-    const nextLanguage = currentLanguage === "bm" ? "en" : "bm";
-    applyLanguage(nextLanguage);
-  });
-}
 
 // ========== MOBILE MENU ==========
 const menuToggle = document.getElementById("menuToggle");
@@ -832,8 +2191,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const href = this.getAttribute("href");
 
     if (href !== "#" && href.startsWith("#")) {
-      e.preventDefault();
       const target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
 
       if (target) {
         const offsetTop = target.offsetTop - 70;
@@ -904,14 +2264,35 @@ if (document.readyState === "loading") {
 }
 window.addEventListener("resize", () => {
   requestAnimationFrame(revealVisibleFadeElements);
+  enforceFixedUiPositions();
 });
 
 // ========== SCROLL TO TOP ==========
 const scrollTopBtn = document.getElementById("scrollTop");
 
+function enforceFixedUiPositions() {
+  const footerEl = document.querySelector("footer");
+  if (footerEl) {
+    footerEl.style.position = "static";
+    footerEl.style.bottom = "auto";
+    footerEl.style.left = "auto";
+    footerEl.style.width = "100%";
+  }
+
+  if (scrollTopBtn) {
+    scrollTopBtn.style.position = "fixed";
+    scrollTopBtn.style.right = "20px";
+    scrollTopBtn.style.bottom = "20px";
+    scrollTopBtn.style.left = "auto";
+    scrollTopBtn.style.top = "auto";
+    scrollTopBtn.style.zIndex = "9999";
+  }
+}
+
 window.addEventListener(
   "scroll",
   () => {
+    if (!scrollTopBtn) return;
     if (window.pageYOffset > 300) {
       scrollTopBtn.classList.add("visible");
     } else {
@@ -921,36 +2302,44 @@ window.addEventListener(
   { passive: true }
 );
 
-scrollTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
-});
+}
 
 // ========== ACTIVE NAV LINK ==========
 const sections = document.querySelectorAll("section[id]");
 const navItems = document.querySelectorAll(".nav-links a");
+const navbarEl = document.querySelector(".navbar");
 
-window.addEventListener(
-  "scroll",
-  () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      if (window.pageYOffset >= sectionTop - 100) {
-        current = section.getAttribute("id");
-      }
-    });
-    navItems.forEach((item) => {
-      item.classList.remove("active");
-      if (item.getAttribute("href") === `#${current}`) {
-        item.classList.add("active");
-      }
-    });
-  },
-  { passive: true }
-);
+function syncNavbarOnScroll() {
+  const y = window.pageYOffset || window.scrollY || 0;
+  if (navbarEl) {
+    navbarEl.classList.toggle("is-floating", y > 32);
+  }
+
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (window.pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach((item) => {
+    item.classList.remove("active");
+    if (item.getAttribute("href") === `#${current}`) {
+      item.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", syncNavbarOnScroll, { passive: true });
+syncNavbarOnScroll();
 
 // ========== MULTI-TEXT TYPING ANIMATION ==========
 const tagline = document.querySelector(".tagline");
@@ -1055,50 +2444,431 @@ statCards.forEach((card) => {
   statObserver.observe(card);
 });
 
-// ========== CONTACT FORM WITH EMAILJS ==========
-// (Form removed – section is now References; keep listener only if form exists)
-const contactForm = document.getElementById("contactForm");
-const formStatus = document.getElementById("formStatus");
+// ========== REFERENCES ROW CAROUSELS ==========
+function initReferenceRowCarousels() {
+  const rows = document.querySelectorAll("[data-reference-carousel]");
+  rows.forEach((row) => {
+    const track = row.querySelector(".references-track");
+    const slides = Array.from(row.querySelectorAll(".reference-slide"));
+    const prevBtn = row.querySelector('.reference-nav-btn[data-direction="prev"]');
+    const nextBtn = row.querySelector('.reference-nav-btn[data-direction="next"]');
 
-if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+    if (!track || slides.length === 0 || !prevBtn || !nextBtn) return;
 
-    const submitBtn = contactForm.querySelector(".btn-submit");
-    const originalBtnText = submitBtn ? submitBtn.innerHTML : "";
-    if (submitBtn) {
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      submitBtn.disabled = true;
+    let currentIndex = 0;
+
+    function render() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      const shouldDisable = slides.length <= 1;
+      prevBtn.disabled = shouldDisable;
+      nextBtn.disabled = shouldDisable;
     }
 
-    const templateParams = {
-      from_name: document.getElementById("name")?.value || "",
-      from_email: document.getElementById("email")?.value || "",
-      subject: document.getElementById("subject")?.value || "",
-      message: document.getElementById("message")?.value || "",
-      to_name: "Tuan Khalidah Syazwana",
-    };
+    function goTo(index) {
+      if (slides.length <= 1) return;
+      currentIndex = (index + slides.length) % slides.length;
+      render();
+    }
 
-    emailjs
-      .send("service_kv1i1mi", "template_sqkolz9", templateParams)
-      .then(function (response) {
-        formStatus.textContent = "✓ Message sent successfully!";
-        formStatus.className = "form-status success";
-        contactForm.reset();
-        setTimeout(() => (formStatus.style.display = "none"), 5000);
-      })
-      .catch(function (error) {
-        formStatus.textContent = "✗ Failed to send message. Please try again.";
-        formStatus.className = "form-status error";
-        console.error("EmailJS Error:", error);
-        setTimeout(() => (formStatus.style.display = "none"), 5000);
-      })
-      .finally(() => {
-        if (submitBtn) {
-          submitBtn.innerHTML = originalBtnText;
-          submitBtn.disabled = false;
+    prevBtn.addEventListener("click", () => goTo(currentIndex - 1));
+    nextBtn.addEventListener("click", () => goTo(currentIndex + 1));
+
+    render();
+  });
+}
+
+// ========== DIGITAL SIGNATURE ==========
+function initDigitalSignature() {
+  const canvas = document.getElementById("signaturePad");
+  const clearBtn = document.getElementById("clearSignature");
+  const exportImageBtn = document.getElementById("signatureExportImage");
+  const exportPdfBtn = document.getElementById("signatureExportPdf");
+  const statusEl = document.getElementById("signatureStatus");
+  const nameInput = document.getElementById("signatureName");
+  const messageInput = document.getElementById("signatureMessage");
+
+  if (!canvas || !clearBtn || !exportImageBtn || !exportPdfBtn || !statusEl) return;
+
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  let drawing = false;
+  let hasSignature = false;
+  let lastX = 0;
+  let lastY = 0;
+  let cssWidth = 0;
+  let cssHeight = 0;
+
+  function setStatus(message, type = "") {
+    statusEl.textContent = message || "";
+    statusEl.className = `signature-status ${type}`.trim();
+  }
+
+  function paintCanvasBackground() {
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, cssWidth, cssHeight);
+  }
+
+  function configureContext() {
+    const primary = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim();
+    ctx.lineWidth = 2.2;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.strokeStyle = primary || "#111111";
+  }
+
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 1;
+    cssWidth = Math.max(1, Math.floor(rect.width));
+    cssHeight = Math.max(1, Math.floor(rect.height));
+
+    const existingData = hasSignature ? canvas.toDataURL("image/png") : "";
+    canvas.width = Math.max(1, Math.floor(cssWidth * ratio));
+    canvas.height = Math.max(1, Math.floor(cssHeight * ratio));
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    paintCanvasBackground();
+    configureContext();
+
+    if (existingData) {
+      const image = new Image();
+      image.onload = () => {
+        ctx.drawImage(image, 0, 0, cssWidth, cssHeight);
+        configureContext();
+      };
+      image.src = existingData;
+    }
+  }
+
+  function pointFromEvent(event) {
+    const rect = canvas.getBoundingClientRect();
+    if (event.touches && event.touches[0]) {
+      return {
+        x: event.touches[0].clientX - rect.left,
+        y: event.touches[0].clientY - rect.top,
+      };
+    }
+    if (event.changedTouches && event.changedTouches[0]) {
+      return {
+        x: event.changedTouches[0].clientX - rect.left,
+        y: event.changedTouches[0].clientY - rect.top,
+      };
+    }
+    return {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    };
+  }
+
+  function startDrawing(event) {
+    const point = pointFromEvent(event);
+    drawing = true;
+    lastX = point.x;
+    lastY = point.y;
+  }
+
+  function draw(event) {
+    if (!drawing) return;
+    const point = pointFromEvent(event);
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(point.x, point.y);
+    ctx.stroke();
+    lastX = point.x;
+    lastY = point.y;
+    hasSignature = true;
+  }
+
+  function stopDrawing() {
+    drawing = false;
+  }
+
+  function clearSignature(shouldClearStatus = true) {
+    hasSignature = false;
+    paintCanvasBackground();
+    configureContext();
+    if (shouldClearStatus) setStatus("");
+  }
+
+  function drawRoundedRect(context, x, y, width, height, radius) {
+    context.beginPath();
+    context.moveTo(x + radius, y);
+    context.lineTo(x + width - radius, y);
+    context.quadraticCurveTo(x + width, y, x + width, y + radius);
+    context.lineTo(x + width, y + height - radius);
+    context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+    context.lineTo(x + radius, y + height);
+    context.quadraticCurveTo(x, y + height, x, y + height - radius);
+    context.lineTo(x, y + radius);
+    context.quadraticCurveTo(x, y, x + radius, y);
+    context.closePath();
+  }
+
+  function wrapText(context, text, maxWidth) {
+    const words = String(text || "").split(/\s+/).filter(Boolean);
+    if (!words.length) return [];
+    const lines = [];
+    let line = words[0];
+
+    for (let i = 1; i < words.length; i += 1) {
+      const testLine = `${line} ${words[i]}`;
+      const testWidth = context.measureText(testLine).width;
+      if (testWidth > maxWidth) {
+        lines.push(line);
+        line = words[i];
+      } else {
+        line = testLine;
+      }
+    }
+    lines.push(line);
+    return lines;
+  }
+
+  function buildExportCanvas() {
+    const outCanvas = document.createElement("canvas");
+    outCanvas.width = 1400;
+    outCanvas.height = 1980;
+    const outCtx = outCanvas.getContext("2d");
+    if (!outCtx) return null;
+
+    const visitorName = (nameInput?.value || "").trim() || "Portfolio Visitor";
+    const visitorMessage = (messageInput?.value || "").trim();
+    const now = new Date();
+    const timestamp = now.toLocaleString();
+
+    const bgGradient = outCtx.createLinearGradient(0, 0, outCanvas.width, outCanvas.height);
+    bgGradient.addColorStop(0, "#f8fff4");
+    bgGradient.addColorStop(0.4, "#e5f9d9");
+    bgGradient.addColorStop(1, "#d1ffbd");
+    outCtx.fillStyle = bgGradient;
+    outCtx.fillRect(0, 0, outCanvas.width, outCanvas.height);
+
+    outCtx.globalAlpha = 0.22;
+    outCtx.fillStyle = "#9fd88a";
+    outCtx.beginPath();
+    outCtx.arc(220, 260, 170, 0, Math.PI * 2);
+    outCtx.fill();
+    outCtx.beginPath();
+    outCtx.arc(1190, 1600, 230, 0, Math.PI * 2);
+    outCtx.fill();
+    outCtx.globalAlpha = 1;
+
+    drawRoundedRect(outCtx, 95, 85, 1210, 1810, 42);
+    outCtx.fillStyle = "rgba(255,255,255,0.86)";
+    outCtx.fill();
+    outCtx.strokeStyle = "rgba(22, 101, 52, 0.18)";
+    outCtx.lineWidth = 2;
+    outCtx.stroke();
+
+    outCtx.fillStyle = "#1f2937";
+    outCtx.font = "700 54px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillText("Creative Canvas Export", 155, 220);
+    outCtx.font = "500 30px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillStyle = "#166534";
+    outCtx.fillText("from Arif Azinuddin Portfolio Website", 155, 270);
+
+    outCtx.fillStyle = "#111827";
+    outCtx.font = "700 32px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillText(`Name: ${visitorName}`, 155, 355);
+    outCtx.font = "500 24px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillStyle = "#475569";
+    outCtx.fillText(`Created: ${timestamp}`, 155, 398);
+
+    drawRoundedRect(outCtx, 145, 450, 1110, 630, 30);
+    outCtx.fillStyle = "#ffffff";
+    outCtx.fill();
+    outCtx.strokeStyle = "#bbf7d0";
+    outCtx.lineWidth = 3;
+    outCtx.stroke();
+
+    outCtx.fillStyle = "#166534";
+    outCtx.font = "700 30px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillText("Your Drawing", 175, 510);
+
+    outCtx.drawImage(canvas, 175, 540, 1050, 500);
+
+    drawRoundedRect(outCtx, 145, 1120, 1110, 575, 30);
+    outCtx.fillStyle = "#f8fff4";
+    outCtx.fill();
+    outCtx.strokeStyle = "#bbf7d0";
+    outCtx.lineWidth = 3;
+    outCtx.stroke();
+
+    outCtx.fillStyle = "#166534";
+    outCtx.font = "700 30px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillText("Message", 175, 1185);
+
+    outCtx.font = "500 31px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillStyle = "#1f2937";
+    const messageText = visitorMessage || "No message. Just pure creativity.";
+    const lines = wrapText(outCtx, messageText, 1035);
+    let y = 1245;
+    lines.slice(0, 11).forEach((line) => {
+      outCtx.fillText(line, 175, y);
+      y += 48;
+    });
+
+    outCtx.fillStyle = "#6b7280";
+    outCtx.font = "500 22px Inter, Segoe UI, Arial, sans-serif";
+    outCtx.fillText("Keep creating. Keep experimenting.", 175, 1760);
+
+    return outCanvas;
+  }
+
+  function downloadBlobUrl(blobUrl, filename) {
+    const link = document.createElement("a");
+    link.href = blobUrl;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+
+  function exportAsImage() {
+    const outCanvas = buildExportCanvas();
+    if (!outCanvas) {
+      setStatus("Unable to generate export image.", "error");
+      return;
+    }
+    const imageUrl = outCanvas.toDataURL("image/png");
+    downloadBlobUrl(imageUrl, `arif-portfolio-canvas-${Date.now()}.png`);
+    setStatus("PNG exported successfully.", "success");
+  }
+
+  function exportAsPdf() {
+    const outCanvas = buildExportCanvas();
+    if (!outCanvas) {
+      setStatus("Unable to generate export PDF.", "error");
+      return;
+    }
+
+    const pdfLib = window.jspdf && window.jspdf.jsPDF ? window.jspdf.jsPDF : null;
+    if (!pdfLib) {
+      setStatus("PDF library is not loaded. PNG export is still available.", "error");
+      return;
+    }
+
+    const dataUrl = outCanvas.toDataURL("image/png");
+    const pdf = new pdfLib({
+      orientation: "portrait",
+      unit: "px",
+      format: [outCanvas.width, outCanvas.height],
+    });
+    pdf.addImage(dataUrl, "PNG", 0, 0, outCanvas.width, outCanvas.height);
+    const blobUrl = pdf.output("bloburl");
+    window.open(blobUrl, "_blank", "noopener,noreferrer");
+    setStatus("PDF opened in a new tab.", "success");
+  }
+
+  canvas.addEventListener("mousedown", startDrawing);
+  canvas.addEventListener("mousemove", draw);
+  document.addEventListener("mouseup", stopDrawing);
+  canvas.addEventListener("mouseleave", stopDrawing);
+
+  canvas.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    startDrawing(e);
+  }, { passive: false });
+  canvas.addEventListener("touchmove", (e) => {
+    e.preventDefault();
+    draw(e);
+  }, { passive: false });
+  canvas.addEventListener("touchend", stopDrawing, { passive: true });
+  canvas.addEventListener("touchcancel", stopDrawing, { passive: true });
+
+  clearBtn.addEventListener("click", clearSignature);
+  exportImageBtn.addEventListener("click", exportAsImage);
+  exportPdfBtn.addEventListener("click", exportAsPdf);
+
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+}
+
+// ========== TECH ICON POPUP + DRAG SORT ==========
+function initTechIconsInteraction() {
+  const iconContainers = document.querySelectorAll("#tools .tech-icons");
+  if (!iconContainers.length) return;
+
+  let popup = document.getElementById("deviconPopup");
+  if (!popup) {
+    popup = document.createElement("div");
+    popup.id = "deviconPopup";
+    popup.className = "devicon-popup";
+    popup.setAttribute("aria-live", "polite");
+    document.body.appendChild(popup);
+  }
+
+  let popupHideTimer = 0;
+  let draggedIcon = null;
+
+  function hidePopup() {
+    popup.classList.remove("show");
+  }
+
+  function showPopup(icon) {
+    const label = icon.dataset.tech || icon.getAttribute("aria-label") || "Tech";
+    const rect = icon.getBoundingClientRect();
+    popup.textContent = label;
+    popup.style.left = `${rect.left + rect.width / 2}px`;
+    popup.style.top = `${rect.top}px`;
+    popup.classList.add("show");
+    clearTimeout(popupHideTimer);
+    popupHideTimer = window.setTimeout(hidePopup, 1400);
+  }
+
+  iconContainers.forEach((container) => {
+    const icons = container.querySelectorAll("i");
+    icons.forEach((icon) => {
+      const tech = icon.getAttribute("title") || icon.dataset.tech || "";
+      if (tech) {
+        icon.dataset.tech = tech;
+        icon.removeAttribute("title");
+        icon.setAttribute("aria-label", tech);
+      }
+
+      icon.classList.add("tech-icon-item");
+      icon.setAttribute("draggable", "true");
+      icon.setAttribute("tabindex", "0");
+      icon.setAttribute("role", "button");
+
+      icon.addEventListener("click", () => showPopup(icon));
+      icon.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          showPopup(icon);
         }
       });
+
+      icon.addEventListener("dragstart", (e) => {
+        draggedIcon = icon;
+        icon.classList.add("dragging");
+        if (e.dataTransfer) {
+          e.dataTransfer.effectAllowed = "move";
+          e.dataTransfer.setData("text/plain", icon.dataset.tech || "tech");
+        }
+      });
+
+      icon.addEventListener("dragend", () => {
+        icon.classList.remove("dragging");
+        draggedIcon = null;
+      });
+
+      icon.addEventListener("dragover", (e) => {
+        if (!draggedIcon || draggedIcon === icon) return;
+        e.preventDefault();
+        const rect = icon.getBoundingClientRect();
+        const insertAfter = e.clientX > rect.left + rect.width / 2;
+        container.insertBefore(draggedIcon, insertAfter ? icon.nextSibling : icon);
+      });
+
+      icon.addEventListener("drop", (e) => {
+        e.preventDefault();
+      });
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("#tools .tech-icons i")) hidePopup();
   });
 }
 
@@ -1148,6 +2918,9 @@ document.addEventListener("keydown", (e) => {
     }
     document.querySelectorAll(".modal").forEach((modal) => {
       modal.style.display = "none";
+      if (modal.id === "ticTacToeModal") {
+        handleFightMeModalClosed();
+      }
     });
     document.body.style.overflow = "auto";
   }
@@ -1158,8 +2931,32 @@ function updateCopyrightYear() {
   const copyrightEl = document.getElementById("copyrightYear");
   if (copyrightEl) {
     const year = new Date().getFullYear();
-    copyrightEl.textContent = year === 2025 ? "2025" : `2025 - ${year}`;
+    copyrightEl.textContent = year === 2025 ? "2025" : `${year}`;
   }
+}
+
+function initWelcomeLoader() {
+  const loader = document.getElementById("welcomeLoader");
+  if (!loader) return;
+
+  const progress = loader.querySelector(".welcome-loader-progress-fill");
+  const durationMs = 3000;
+  const fadeOutMs = 650;
+
+  document.body.classList.add("is-loading");
+  loader.classList.add("is-active");
+
+  if (progress) {
+    progress.style.animation = `welcomeProgressFill ${durationMs}ms linear forwards`;
+  }
+
+  window.setTimeout(() => {
+    loader.classList.add("is-leaving");
+    document.body.classList.remove("is-loading");
+    window.setTimeout(() => {
+      loader.remove();
+    }, fadeOutMs);
+  }, durationMs);
 }
 
 // ========== APPLE CUSTOM CURSOR ==========
@@ -1241,8 +3038,13 @@ function initAppleCursor() {
 
 // ========== INITIALIZE ==========
 function initPortfolio() {
+  initWelcomeLoader();
   updateCopyrightYear();
+  enforceFixedUiPositions();
   applyLanguage(currentLanguage);
+  initTechIconsInteraction();
+  initReferenceRowCarousels();
+  initDigitalSignature();
   createParticles();
   initAppleCursor();
   const projectsSection = document.getElementById("projects");
@@ -1261,7 +3063,7 @@ if (document.readyState === "loading") {
 
 // ========== CONSOLE SIGNATURE ==========
 console.log(
-  "%c👋 Hello there!",
+  "%cðŸ‘‹ Hello there!",
   "font-size: 20px; font-weight: bold; color: #6366f1;"
 );
 console.log(
@@ -1272,3 +3074,7 @@ console.log(
   "%cFeel free to reach out if you'd like to collaborate!",
   "font-size: 12px; color: #64748b;"
 );
+
+
+
+
