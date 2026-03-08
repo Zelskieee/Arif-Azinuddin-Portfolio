@@ -131,7 +131,15 @@ const projects = [
 
 // ========== RENDER PROJECTS ==========
 let currentFilter = "project";
-let currentLanguage = localStorage.getItem("portfolioLang") || "bm";
+let currentLanguage = "en";
+try {
+  const savedLang = localStorage.getItem("portfolioLang");
+  if (savedLang === "bm" || savedLang === "en") {
+    currentLanguage = savedLang;
+  }
+} catch (_error) {
+  currentLanguage = "en";
+}
 let taglineRunId = 0;
 
 const i18n = {
@@ -297,7 +305,11 @@ function applyLanguage(lang = "bm") {
 
   document.documentElement.lang = currentLanguage === "bm" ? "ms" : "en";
   document.title = i18n[currentLanguage].pageTitle;
-  localStorage.setItem("portfolioLang", currentLanguage);
+  try {
+    localStorage.setItem("portfolioLang", currentLanguage);
+  } catch (_error) {
+    // Ignore storage write failures (e.g., privacy mode); UI still updates.
+  }
 
   setText('.nav-links a[href="#home"]', t.navHome);
   setText('.nav-links a[href="#experience"]', t.navExperience);
@@ -374,6 +386,13 @@ function applyLanguage(lang = "bm") {
 
   restartTaglineAnimation();
   renderProjects(currentFilter);
+}
+
+const langToggleBtn = document.getElementById("langToggle");
+if (langToggleBtn) {
+  langToggleBtn.addEventListener("click", () => {
+    applyLanguage(currentLanguage === "bm" ? "en" : "bm");
+  });
 }
 
 function renderProjects(filter = "all") {
